@@ -26,7 +26,7 @@
 ```bash
 # clone the repo
 git clone https://github.com/akeight/ai4all-project.git
-cd ai4all
+cd ai4all-project
 
 # verify remotes
 git remote -v
