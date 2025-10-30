@@ -1,9 +1,10 @@
 import { Link, useLocation } from "react-router-dom";
 import { Activity, FlaskConical, Database, Network, AlertCircle, TrendingUp, Menu } from "lucide-react";
-import { Button } from "./ui/button";
-import { Badge } from "./ui/badge";
+import { Button } from "../components/ui/button";
+import { Badge } from "../components/ui/badge";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import { ThemeToggle } from "./ThemeToggle";
 
 const navigation = [
   { name: "Dashboard", href: "/", icon: Activity },
@@ -60,18 +61,22 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
                 </Link>
               );
             })}
+            <ThemeToggle />
           </nav>
 
           {/* Mobile Menu Button */}
-          <Button
-            variant="ghost"
-            size="sm"
-            className="md:hidden"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle menu"
-          >
+          <div className="flex items-center gap-2 md:hidden">
+            <ThemeToggle />
+            <Button
+              variant="ghost"
+              size="sm"
+              className="md:hidden"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label="Toggle menu"
+            >
             <Menu className="h-5 w-5" />
           </Button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
