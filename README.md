@@ -15,8 +15,7 @@ We develop **locally with conda** first. We only use **Docker** later when we wa
 
 ```
 .
-├── PROJECT_SETUP.md        ← this file
-├── README.md               ← high-level project notes
+├── README.md               ← project notes, collab config
 ├── client/                 ← Next.js app (Node)
 └── server/                 ← FastAPI app (Python)
 ```
