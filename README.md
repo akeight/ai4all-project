@@ -1,5 +1,43 @@
 # AI4ALL Healthcare Project
 
+Next.js (client) + FastAPI (server) + conda (local) + optional Docker (later)
+
+This repo has **two** parts:
+
+- `/client` → Next.js (frontend)
+- `/server` → FastAPI (backend, ML placeholder for now)
+
+We develop **locally with conda** first. We only use **Docker** later when we want to demo/deploy.
+
+---
+
+## 1. Repo structure
+
+```
+.
+├── README.md               ← project notes, collab config
+├── client/                 ← Next.js app (Node)
+└── server/                 ← FastAPI app (Python)
+```
+---
+
+
+## 1. Quick Start (copy/paste)
+
+```bash
+# --- BACKEND ---
+cd server
+conda create -n all-ml python=3.11 -y
+conda activate all-ml
+pip install -r requirements.txt
+uvicorn main:app --reload
+# FastAPI now: http://127.0.0.1:8000/docs
+
+# --- FRONTEND (new terminal) ---
+cd client
+npm install
+npm run dev
+# Next.js now: http://localhost:3000
 
 ---
 
