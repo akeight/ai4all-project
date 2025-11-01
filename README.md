@@ -1,10 +1,10 @@
 # AI4ALL Healthcare Project
 
-Next.js (client) + FastAPI (server) + conda (local) + optional Docker (later)
+React (client) + FastAPI (server) + conda (local) + optional Docker (later)
 
 This repo has **two** parts:
 
-- `/client` → Next.js (frontend)
+- `/client` → React/Vite (frontend)
 - `/server` → FastAPI (backend, ML placeholder for now)
 
 We develop **locally with conda** first. We only use **Docker** later when we want to demo/deploy.
@@ -16,7 +16,7 @@ We develop **locally with conda** first. We only use **Docker** later when we wa
 ```
 .
 ├── README.md               ← project notes, collab config
-├── client/                 ← Next.js app (Node)
+├── client/                 ← React/Vite app (Node)
 └── server/                 ← FastAPI app (Python)
 ```
 ---
