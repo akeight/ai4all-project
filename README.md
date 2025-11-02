@@ -47,7 +47,7 @@ npm run dev
 3. **Push** your branch to the remote.
 4. **Open a Pull Request (PR)** and ask for review.
 5. **Address feedback**, keep PRs small.
-6. **Merge** with **Squash & Merge** into `main`.
+6. **Merge** with **Commit & Merge** into `main`.
 7. **Delete** the feature branch you worked on after merge.
 
 > Default branches: `main` (protected) → feature branches → PR → review → merge.
@@ -66,27 +66,9 @@ npm run dev
 git clone https://github.com/akeight/ai4all-project.git
 cd ai4all-project
 
-# verify remotes
-git remote -v
-
-# sync to remote, if needed
-git remote add origin https://github.com/akeight/ai4all-project.git
-
-```
----
-
-## 🌿 Branching Rules
-- Name branches by type:
-  - `feat/<short-name>` – new feature
-  - `fix/<short-name>` – bug fix
-  - `docs/<short-name>` – docs only
-  - `chore/<short-name>` – tooling/cleanup
-
 ```bash
 # create & switch to a new branch
 git switch -c feat/add-model
-# or 
-git checkout -b feat/add-model
 ```
 
 ---
@@ -110,13 +92,12 @@ git commit -m "feat(task): brief description"
 ```
 **4) Push your branch**
 ```bash
-git push -u origin feat/some-task
+git push
 ```
 **5) Open a PR**
 - Title: clear & concise
 - Description: what/why/how
 - Link any related issues
-- Request everyone as reviewer
 
 **6) Update branch if `main` changed**
 ```bash
@@ -134,29 +115,7 @@ git commit -m "fix:"
 git push
 ```
 **8) Merge**
-- Use **Squash & Merge** to keep `main` tidy
+- Use **Commit & Merge** to keep `main` tidy
 - Delete the branch after merge
 
 ---
-
-<!-- ## 🔧 Run the Project (example)
-_Adapt these for your stack_
-```bash
-# install deps
-npm install
-# run dev server
-npm run dev
-# run tests
-npm test
-``` -->
-
-<!-- ---
-
-## 🧪 Pull Request Checklist
-- [ ] Builds locally & tests pass
-- [ ] Linting/formatting applied (e.g., Prettier/ESLint)
-- [ ] Small, focused PR (≤ ~300 lines if possible)
-- [ ] Clear screenshots or GIFs for UI changes
-- [ ] Backwards compatible (no breaking API changes without plan)
-
---- -->
