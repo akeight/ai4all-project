@@ -1,12 +1,12 @@
 import { useState, useCallback } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Slider } from "@/components/ui/slider";
-import { Label } from "@/components/ui/label";
+import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card";
+import { Button } from "../components/ui/button";
+import { Slider } from "../components/ui/slider";
+import { Label } from "../components/ui/label";
 import { TopKBar } from "@/components/TopKBar";
-import { PredictionCard } from "@/components/PredictionCard";
-import { mockAPI, PredictionResult } from "@/mocks/api";
-import { useAppStore } from "@/store/useAppStore";
+import { PredictionCard } from "../components/PredictionCard";
+import { mockAPI, PredictionResult } from "../mocks/api";
+import { useAppStore } from "../store/useAppStore";
 import { Upload, Download, Eye, EyeOff } from "lucide-react";
 import { toast } from "sonner";
 
