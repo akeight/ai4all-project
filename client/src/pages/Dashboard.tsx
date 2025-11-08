@@ -51,7 +51,7 @@ export const Dashboard = () => {
       {/* Hero Section */}
       <div className="text-center space-y-3 py-8">
         <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-          ALL Classification Dashboard
+        Acute Lymphoblastic Leukemia (ALL) Classification Dashboard
         </h1>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
           Deep learning model for automated classification of Acute Lymphoblastic Leukemia subtypes

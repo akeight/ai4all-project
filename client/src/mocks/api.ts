@@ -59,10 +59,10 @@ export interface PredictionResult {
       
       return {
         topk: [
-          { label: "ALL-Type1", prob: normalized[0] },
-          { label: "ALL-Type2", prob: normalized[1] },
-          { label: "ALL-Type3", prob: normalized[2] },
-          { label: "ALL-Type4", prob: normalized[3] },
+          { label: "Benign", prob: normalized[0] },
+          { label: "Malignant Pre-B", prob: normalized[1] },
+          { label: "Malignant Pro-B", prob: normalized[2] },
+          { label: "Malignant Early Pre-B", prob: normalized[3] },
         ].sort((a, b) => b.prob - a.prob),
         cam_b64: options.return_cam ? generateMockCam() : "",
         inference_ms: Math.floor(Math.random() * 20) + 20,
@@ -73,14 +73,14 @@ export interface PredictionResult {
       await delay(50);
       
       return {
-        accuracy: 0.91,
+        accuracy: 0.85,
         macro_f1: 0.89,
-        dataset_size: 12750,
+        dataset_size: 2942,
         per_class: [
-          { label: "ALL-Type1", precision: 0.92, recall: 0.88, f1: 0.90, support: 3200 },
-          { label: "ALL-Type2", precision: 0.87, recall: 0.90, f1: 0.88, support: 3150 },
-          { label: "ALL-Type3", precision: 0.90, recall: 0.87, f1: 0.88, support: 3200 },
-          { label: "ALL-Type4", precision: 0.85, recall: 0.82, f1: 0.83, support: 3200 },
+          { label: "Benign", precision: 0.92, recall: 0.88, f1: 0.90, support: 512 },
+          { label: "Malignant Pre-B", precision: 0.87, recall: 0.90, f1: 0.88, support: 955 },
+          { label: "Malignant Pro-B", precision: 0.90, recall: 0.87, f1: 0.88, support: 796 },
+          { label: "Malignant Early Pre-B", precision: 0.85, recall: 0.82, f1: 0.83, support: 979 },
         ],
       };
     },
@@ -89,7 +89,7 @@ export interface PredictionResult {
       await delay(50);
       
       return {
-        labels: ["ALL-Type1", "ALL-Type2", "ALL-Type3", "ALL-Type4"],
+        labels: ["Benign", "Malignant Pre-B", "Malignant Pro-B", "Malignant Early Pre-B"],
         matrix: [
           [780, 34, 12, 8],
           [29, 765, 21, 11],
@@ -104,7 +104,7 @@ export interface PredictionResult {
       
       // Generate mock samples
       const samples: Sample[] = [];
-      const classes = ["ALL-Type1", "ALL-Type2", "ALL-Type3", "ALL-Type4"];
+      const classes = ["Benign", "Malignant Pre-B", "Malignant Pro-B", "Malignant Early Pre-B"];
       
       for (let i = offset; i < offset + limit; i++) {
         const trueClass = classLabel || classes[i % classes.length];
@@ -126,7 +126,7 @@ export interface PredictionResult {
     async getEmbeddings(): Promise<{ points: EmbeddingPoint[] }> {
       await delay(150);
       
-      const classes = ["ALL-Type1", "ALL-Type2", "ALL-Type3", "ALL-Type4"];
+      const classes = ["Benign", "Malignant Pre-B", "Malignant Pro-B", "Malignant Early Pre-B"];
       const points: EmbeddingPoint[] = [];
       
       // Generate clustered points for each class

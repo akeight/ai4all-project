@@ -9,7 +9,7 @@ import { DetailDrawer } from "@/components/DetailDrawer";
 import { mockAPI } from "@/mocks/api";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const ALL_CLASSES = ["ALL-Type1", "ALL-Type2", "ALL-Type3", "ALL-Type4"];
+const ALL_CLASSES = ["Benign", "Malignant Pre-B", "Malignant Pro-B", "Malignant Early Pre-B"];
 
 export const Explore = () => {
   const [samples, setSamples] = useState<any[]>([]);
