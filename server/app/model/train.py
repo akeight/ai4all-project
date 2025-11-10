@@ -3,7 +3,7 @@
 import tensorflow as tf
 from tensorflow.keras.layers import Dense, Flatten
 from tensorflow.keras.models import Model
-from tensorflow.keras.applications.resnet50 import ResNet50 
+from tensorflow.keras.applications.resnet50 import ResNet50, preprocess_input
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 import numpy as np
 from glob import glob 
@@ -18,10 +18,8 @@ validationImages = "data/images/val"
 myResNet = ResNet50(input_shape = IMAGE_SIZE + [3], weights="imagenet", include_top = False)
 print(myResNet.summary())
 
-# freeze the weights 
-myResNet.trainable = True
-for layer in myResNet.layers[:-10]:
-    layer.trainable = False
+# freeze the whole base for initial head training
+myResNet.trainable = False
 
 
 Classes = glob("data/images/train/*")
@@ -39,23 +37,23 @@ model.compile(loss = 'categorical_crossentropy', optimizer=tf.keras.optimizers.A
 
 #data augmentation
 train_datagen = ImageDataGenerator(
-    rescale = 1./255,
-    shear_range = 0.2, 
-    zoom_range = 0.2, 
-    rotation_range = 20, 
-    width_shift_range = 0.2,
-    height_shift_range = 0.2,
-    horizontal_flip = True,
-    vertical_flip=True,
-    brightness_range=[0.8, 1.2]
+    preprocessing_function=preprocess_input,
+    shear_range=0.15,
+    zoom_range=0.15,
+    rotation_range=15,
+    width_shift_range=0.1,
+    height_shift_range=0.1,
+    horizontal_flip=True,
+    brightness_range=[0.9, 1.1],
+    fill_mode='nearest'
 ) 
 
-test_datagen = ImageDataGenerator(rescale = 1./255)
+test_datagen = ImageDataGenerator(preprocessing_function=preprocess_input)
 
 training_set = train_datagen.flow_from_directory(trainingImages, target_size = (224, 224), batch_size = 32, class_mode = 'categorical')
 test_set = test_datagen.flow_from_directory(testingImages,  target_size = (224, 224), batch_size = 32, class_mode = 'categorical')
 
-EPOCHS = 50
+EPOCHS = 45
 
 bestModelFile = 'blood_cancer_model.h5'
 

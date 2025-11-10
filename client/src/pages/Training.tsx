@@ -140,7 +140,7 @@ export const Training = () => {
           </div>
 
           {/* Notes */}
-          <Card className="p-6">
+          {/* <Card className="p-6">
             <h3 className="text-lg font-semibold mb-4">Training Notes & Observations</h3>
             <div className="space-y-4">
               <Alert>
@@ -183,7 +183,7 @@ export const Training = () => {
                 </AlertDescription>
               </Alert>
             </div>
-          </Card>
+          </Card> */}
         </>
       )}
     </div>

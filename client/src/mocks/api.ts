@@ -123,32 +123,32 @@ export interface PredictionResult {
       return samples;
     },
   
-    async getEmbeddings(): Promise<{ points: EmbeddingPoint[] }> {
-      await delay(150);
+    // async getEmbeddings(): Promise<{ points: EmbeddingPoint[] }> {
+    //   await delay(150);
       
-      const classes = ["Benign", "Malignant Pre-B", "Malignant Pro-B", "Malignant Early Pre-B"];
-      const points: EmbeddingPoint[] = [];
+    //   const classes = ["Benign", "Malignant Pre-B", "Malignant Pro-B", "Malignant Early Pre-B"];
+    //   const points: EmbeddingPoint[] = [];
       
-      // Generate clustered points for each class
-      for (let i = 0; i < 400; i++) {
-        const classIdx = i % 4;
-        const className = classes[classIdx];
-        const centerX = (classIdx % 2) * 0.6 + 0.2;
-        const centerY = Math.floor(classIdx / 2) * 0.6 + 0.2;
-        const correct = Math.random() > 0.1;
+    //   // Generate clustered points for each class
+    //   for (let i = 0; i < 400; i++) {
+    //     const classIdx = i % 4;
+    //     const className = classes[classIdx];
+    //     const centerX = (classIdx % 2) * 0.6 + 0.2;
+    //     const centerY = Math.floor(classIdx / 2) * 0.6 + 0.2;
+    //     const correct = Math.random() > 0.1;
         
-        points.push({
-          id: `img_${i.toString().padStart(4, "0")}`,
-          x: centerX + (Math.random() - 0.5) * 0.3,
-          y: centerY + (Math.random() - 0.5) * 0.3,
-          class: className,
-          correct,
-          thumb: `/placeholder.svg`,
-        });
-      }
+    //     points.push({
+    //       id: `img_${i.toString().padStart(4, "0")}`,
+    //       x: centerX + (Math.random() - 0.5) * 0.3,
+    //       y: centerY + (Math.random() - 0.5) * 0.3,
+    //       class: className,
+    //       correct,
+    //       thumb: `/placeholder.svg`,
+    //     });
+    //   }
       
-      return { points };
-    },
+    //   return { points };
+    // },
   
     async getTrainingRuns() {
       await delay(50);
@@ -181,17 +181,17 @@ export interface PredictionResult {
           },
           history: generateHistory(0.60, 1.2),
         },
-        {
-          id: "run_002",
-          name: "EfficientNet-B3 + Augmentation",
-          date: "2024-10-20",
-          metrics: {
-            accuracy: 0.91,
-            macro_f1: 0.89,
-            loss: 0.298,
-          },
-          history: generateHistory(0.65, 1.1),
-        },
+        // {
+        //   id: "run_002",
+        //   name: "EfficientNet-B3 + Augmentation",
+        //   date: "2024-10-20",
+        //   metrics: {
+        //     accuracy: 0.91,
+        //     macro_f1: 0.89,
+        //     loss: 0.298,
+        //   },
+        //   history: generateHistory(0.65, 1.1),
+        // },
       ];
     },
   };
