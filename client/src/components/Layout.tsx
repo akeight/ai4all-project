@@ -10,7 +10,7 @@ const navigation = [
   { name: "Dashboard", href: "/", icon: Activity },
   { name: "Live Demo", href: "/demo", icon: FlaskConical },
   { name: "Data Explorer", href: "/explore", icon: Database },
-  { name: "Interpretability", href: "/interpret", icon: Network },
+  // { name: "Interpretability", href: "/interpret", icon: Network },
   { name: "Error Analysis", href: "/errors", icon: AlertCircle },
   { name: "Training Runs", href: "/training", icon: TrendingUp },
 ];

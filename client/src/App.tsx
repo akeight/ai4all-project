@@ -8,7 +8,7 @@ import { Layout } from "@/components/Layout";
 import { Dashboard } from "@/pages/Dashboard";
 import { Demo } from "@/pages/Demo";
 import { Explore } from "@/pages/Explore";
-import { Interpret } from "@/pages/Interpret";
+// import { Interpret } from "@/pages/Interpret";
 import { Errors } from "@/pages/Errors";
 import { Training } from "@/pages/Training";
 import NotFound from "@/pages/NotFound";
@@ -27,7 +27,7 @@ const App = () => (
             <Route path="/" element={<Dashboard />} />
             <Route path="/demo" element={<Demo />} />
             <Route path="/explore" element={<Explore />} />
-            <Route path="/interpret" element={<Interpret />} />
+            {/* <Route path="/interpret" element={<Interpret />} /> */}
             <Route path="/errors" element={<Errors />} />
             <Route path="/training" element={<Training />} />
             <Route path="*" element={<NotFound />} />
