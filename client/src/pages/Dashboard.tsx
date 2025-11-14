@@ -62,7 +62,7 @@ export const Dashboard = () => {
       <MetricsCards
         accuracy={metrics.accuracy}
         macroF1={metrics.macro_f1}
-        inferenceMs={28}
+        inferenceMs={4.96}
         datasetSize={metrics.dataset_size}
       />
 

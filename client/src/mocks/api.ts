@@ -73,14 +73,14 @@ export interface PredictionResult {
       await delay(50);
       
       return {
-        accuracy: 0.85,
-        macro_f1: 0.89,
+        accuracy: 0.96,
+        macro_f1: 0.95,
         dataset_size: 2942,
         per_class: [
-          { label: "Benign", precision: 0.92, recall: 0.88, f1: 0.90, support: 512 },
-          { label: "Malignant Pre-B", precision: 0.87, recall: 0.90, f1: 0.88, support: 955 },
-          { label: "Malignant Pro-B", precision: 0.90, recall: 0.87, f1: 0.88, support: 796 },
-          { label: "Malignant Early Pre-B", precision: 0.85, recall: 0.82, f1: 0.83, support: 979 },
+          { label: "Benign", precision: 1.0, recall: 1.0, f1: 1.0, support: 5 },
+          { label: "Malignant Pre-B", precision: 1.0, recall: 0.80, f1: 0.89, support: 5 },
+          { label: "Malignant Pro-B", precision: 1.0, recall: 1.0, f1: 1.0, support: 5 },
+          { label: "Malignant Early Pre-B", precision: 0.83, recall: 1.0, f1: 0.91, support: 5 },
         ],
       };
     },
@@ -153,33 +153,127 @@ export interface PredictionResult {
     async getTrainingRuns() {
       await delay(50);
       
-      // Generate mock training history
-      const generateHistory = (baseAcc: number, baseLoss: number) => {
-        const history = [];
-        for (let i = 1; i <= 50; i++) {
-          const progress = i / 50;
-          history.push({
-            epoch: i,
-            train_loss: baseLoss - (baseLoss * 0.7 * progress) + Math.random() * 0.05,
-            val_loss: baseLoss - (baseLoss * 0.65 * progress) + Math.random() * 0.08,
-            train_acc: baseAcc + (0.3 * progress) + Math.random() * 0.02,
-            val_acc: baseAcc + (0.28 * progress) + Math.random() * 0.03,
-          });
-        }
-        return history;
-      };
+      // Real validation training history
+      const history = [
+        {
+          epoch: 1,
+          train_loss: 1.4320,
+          val_loss: 0.8957,
+          train_acc: 0.3991,
+          val_acc: 0.7197,
+        },
+        {
+          epoch: 2,
+          train_loss: 0.9432,
+          val_loss: 0.6277,
+          train_acc: 0.6506,
+          val_acc: 0.8382,
+        },
+        {
+          epoch: 3,
+          train_loss: 0.6950,
+          val_loss: 0.5070,
+          train_acc: 0.8017,
+          val_acc: 0.8508,
+        },
+        {
+          epoch: 4,
+          train_loss: 0.5625,
+          val_loss: 0.4326,
+          train_acc: 0.8542,
+          val_acc: 0.8773,
+        },
+        {
+          epoch: 5,
+          train_loss: 0.4860,
+          val_loss: 0.3795,
+          train_acc: 0.8687,
+          val_acc: 0.8828,
+        },
+        {
+          epoch: 6,
+          train_loss: 0.4100,
+          val_loss: 0.3282,
+          train_acc: 0.8990,
+          val_acc: 0.9121,
+        },
+        {
+          epoch: 7,
+          train_loss: 0.3716,
+          val_loss: 0.3000,
+          train_acc: 0.9149,
+          val_acc: 0.9177,
+        },
+        {
+          epoch: 8,
+          train_loss: 0.3552,
+          val_loss: 0.2784,
+          train_acc: 0.9087,
+          val_acc: 0.9219,
+        },
+        {
+          epoch: 9,
+          train_loss: 0.3148,
+          val_loss: 0.2499,
+          train_acc: 0.9390,
+          val_acc: 0.9386,
+        },
+        {
+          epoch: 10,
+          train_loss: 0.3116,
+          val_loss: 0.2306,
+          train_acc: 0.9317,
+          val_acc: 0.9442,
+        },
+        {
+          epoch: 11,
+          train_loss: 0.2773,
+          val_loss: 0.2148,
+          train_acc: 0.9312,
+          val_acc: 0.9512,
+        },
+        {
+          epoch: 12,
+          train_loss: 0.2621,
+          val_loss: 0.1962,
+          train_acc: 0.9390,
+          val_acc: 0.9540,
+        },
+        {
+          epoch: 13,
+          train_loss: 0.2332,
+          val_loss: 0.1873,
+          train_acc: 0.9484,
+          val_acc: 0.9596,
+        },
+        {
+          epoch: 14,
+          train_loss: 0.2311,
+          val_loss: 0.1719,
+          train_acc: 0.9442,
+          val_acc: 0.9623,
+        },
+        {
+          epoch: 15,
+          train_loss: 0.2191,
+          val_loss: 0.1674,
+          train_acc: 0.9476,
+          val_acc: 0.9637,
+        },
+      ]
+      
       
       return [
         {
           id: "run_001",
           name: "Baseline ResNet50",
-          date: "2024-10-15",
+          date: "2025-11-13",
           metrics: {
-            accuracy: 0.87,
-            macro_f1: 0.85,
-            loss: 0.342,
+            accuracy: 0.96373, 
+            macro_f1: 0.9495,
+            loss: 0.2191,
           },
-          history: generateHistory(0.60, 1.2),
+          history: history,
         },
         // {
         //   id: "run_002",
@@ -188,7 +282,7 @@ export interface PredictionResult {
         //   metrics: {
         //     accuracy: 0.91,
         //     macro_f1: 0.89,
-        //     loss: 0.298,
+        //     loss: 0.2191,
         //   },
         //   history: generateHistory(0.65, 1.1),
         // },
