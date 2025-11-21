@@ -77,10 +77,10 @@ export interface PredictionResult {
         macro_f1: 0.95,
         dataset_size: 2942,
         per_class: [
-          { label: "Benign", precision: 1.0, recall: 1.0, f1: 1.0, support: 5 },
-          { label: "Malignant Pre-B", precision: 1.0, recall: 0.80, f1: 0.89, support: 5 },
-          { label: "Malignant Pro-B", precision: 1.0, recall: 1.0, f1: 1.0, support: 5 },
-          { label: "Malignant Early Pre-B", precision: 0.83, recall: 1.0, f1: 0.91, support: 5 },
+          { label: "Benign", precision: 1.0, recall: 1.0, f1: 1.0, support: 487 },
+          { label: "Malignant Pre-B", precision: 1.0, recall: 0.80, f1: 0.89, support: 863 },
+          { label: "Malignant Pro-B", precision: 1.0, recall: 1.0, f1: 1.0, support: 719 },
+          { label: "Malignant Early Pre-B", precision: 0.83, recall: 1.0, f1: 0.91, support: 875 },
         ],
       };
     },

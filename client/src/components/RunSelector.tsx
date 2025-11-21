@@ -2,7 +2,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 
-interface Run {
+export interface Run {
   id: string;
   name: string;
   date: string;
