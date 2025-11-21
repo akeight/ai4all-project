@@ -1,5 +1,8 @@
 # dataset : https://www.kaggle.com/datasets/mohammadamireshraghi/blood-cell-cancer-all-4class
 
+import json
+from sklearn.metrics import classification_report
+import os
 import tensorflow as tf
 from tensorflow.keras.layers import Dense, Flatten
 from tensorflow.keras.models import Model
@@ -51,11 +54,17 @@ train_datagen = ImageDataGenerator(
 test_datagen = ImageDataGenerator(preprocessing_function=preprocess_input)
 
 training_set = train_datagen.flow_from_directory(trainingImages, target_size = (224, 224), batch_size = 32, class_mode = 'categorical')
-test_set = test_datagen.flow_from_directory(testingImages,  target_size = (224, 224), batch_size = 32, class_mode = 'categorical')
+test_set = test_datagen.flow_from_directory(
+    testingImages,
+    target_size=(224, 224),
+    batch_size=32,
+    class_mode='categorical',
+    shuffle=False,
+)
 
 EPOCHS = 45
 
-bestModelFile = 'blood_cancer_model.h5'
+bestModelFile = 'server/app/model/blood_cancer_model_v2.h5'
 
 from keras.callbacks import ModelCheckpoint, ReduceLROnPlateau, EarlyStopping
 
@@ -79,6 +88,64 @@ r = model.fit(
    callbacks = callbacks,
    class_weight=class_weights
 )
+
+# ---------- SAVE TRAINING HISTORY FOR LATER (e.g. React/Recharts) ----------
+history = r.history
+num_epochs = len(history["loss"])  # handles EarlyStopping (may be < EPOCHS)
+
+history_data = []
+for i in range(num_epochs):
+    history_data.append({
+        "epoch": i + 1,
+        "train_loss": float(history["loss"][i]),
+        "val_loss": float(history["val_loss"][i]),
+        "train_acc": float(history["accuracy"][i]),
+        "val_acc": float(history["val_accuracy"][i]),
+    })
+
+os.makedirs("metrics", exist_ok=True)
+with open("metrics/training_history.json", "w") as f:
+    json.dump(history_data, f, indent=2)
+
+print("Saved training history to metrics/training_history.json")
+
+# ---------- LOAD BEST MODEL AND SAVE VALIDATION METRICS ----------
+print("Loading best model for evaluation...")
+best_model = tf.keras.models.load_model(bestModelFile)
+
+# reset generator so predictions line up with test_set.classes
+test_set.reset()
+y_true = test_set.classes
+
+# predict over the whole validation set
+preds = best_model.predict(test_set, steps=len(test_set))
+y_pred = np.argmax(preds, axis=1)
+
+# map indices back to class names
+idx_to_class = {v: k for k, v in test_set.class_indices.items()}
+target_names = [idx_to_class[i] for i in range(len(idx_to_class))]
+
+report = classification_report(
+    y_true,
+    y_pred,
+    target_names=target_names,
+    output_dict=True,
+)
+
+summary = {
+    "accuracy": float(report["accuracy"]),
+    "macro_f1": float(report["macro avg"]["f1-score"]),
+    "weighted_f1": float(report["weighted avg"]["f1-score"]),
+}
+
+with open("metrics/validation_report.json", "w") as f:
+    json.dump(report, f, indent=2)
+
+with open("metrics/validation_summary.json", "w") as f:
+    json.dump(summary, f, indent=2)
+
+print("Saved detailed report to metrics/validation_report.json")
+print("Saved summary metrics to metrics/validation_summary.json")
 
 # print the best validation accuracy
 best_val_acc = max(r.history['val_accuracy'])

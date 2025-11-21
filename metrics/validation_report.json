@@ -1,0 +1,39 @@
+{
+  "Benign": {
+    "precision": 0.953125,
+    "recall": 0.9838709677419355,
+    "f1-score": 0.9682539682539683,
+    "support": 62.0
+  },
+  "[Malignant] Pre-B": {
+    "precision": 1.0,
+    "recall": 0.9541284403669725,
+    "f1-score": 0.9765258215962441,
+    "support": 109.0
+  },
+  "[Malignant] Pro-B": {
+    "precision": 0.9782608695652174,
+    "recall": 0.989010989010989,
+    "f1-score": 0.9836065573770492,
+    "support": 91.0
+  },
+  "[Malignant] early Pre-B": {
+    "precision": 0.9732142857142857,
+    "recall": 0.990909090909091,
+    "f1-score": 0.9819819819819819,
+    "support": 110.0
+  },
+  "accuracy": 0.978494623655914,
+  "macro avg": {
+    "precision": 0.9761500388198757,
+    "recall": 0.9794798720072471,
+    "f1-score": 0.977592082302311,
+    "support": 372.0
+  },
+  "weighted avg": {
+    "precision": 0.9789490875242102,
+    "recall": 0.978494623655914,
+    "f1-score": 0.9784926756050165,
+    "support": 372.0
+  }
+}
