@@ -1,37 +1,41 @@
-import { useState, useEffect } from "react";
-import { RunSelector } from "@/components/RunSelector";
+import { useState, useMemo } from "react";
+import { RunSelector, type Run as RunSelectorRun } from "@/components/RunSelector";
 import { Card } from "@/components/ui/card";
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
-import { mockAPI } from "@/mocks/api";
-import { Alert, AlertDescription } from "@/components/ui/alert";
-import { Info } from "lucide-react";
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
+import { trainingRuns } from "@/data/modelMetric";
+import type { HistoryPoint } from "@/data/modelMetric";
+
+type Run = RunSelectorRun & {
+  history: HistoryPoint[];
+};
 
 export const Training = () => {
-  const [runs, setRuns] = useState<any[]>([]);
-  const [selectedRunId, setSelectedRunId] = useState<string>("");
-  const [selectedRun, setSelectedRun] = useState<any>(null);
+  const runs = trainingRuns as Run[];
 
-  useEffect(() => {
-    loadRuns();
-  }, []);
+  const [selectedRunId, setSelectedRunId] = useState<string>(
+    runs[0]?.id ?? ""
+  );
 
-  useEffect(() => {
-    if (selectedRunId) {
-      const run = runs.find((r) => r.id === selectedRunId);
-      setSelectedRun(run);
-    }
-  }, [selectedRunId, runs]);
+  const selectedRun = useMemo(
+    () => runs.find((r) => r.id === selectedRunId) ?? runs[0],
+    [runs, selectedRunId]
+  );
 
-  const loadRuns = async () => {
-    const data = await mockAPI.getTrainingRuns();
-    setRuns(data);
-    if (data.length > 0) {
-      setSelectedRunId(data[0].id);
-    }
-  };
+  if (!selectedRun) {
+    return null;
+  }
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 p-4">
       <div>
         <h1 className="text-3xl font-bold mb-2">Training Runs</h1>
         <p className="text-muted-foreground">
@@ -48,96 +52,153 @@ export const Training = () => {
         />
       )}
 
-      {selectedRun && (
-        <>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {/* Loss Curve */}
-            <Card className="p-6">
-              <h3 className="text-lg font-semibold mb-4">Training & Validation Loss</h3>
-              <ResponsiveContainer width="100%" height={300}>
-                <LineChart data={selectedRun.history}>
-                  <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
-                  <XAxis
-                    dataKey="epoch"
-                    stroke="hsl(var(--muted-foreground))"
-                    label={{ value: "Epoch", position: "insideBottom", offset: -5 }}
-                  />
-                  <YAxis
-                    stroke="hsl(var(--muted-foreground))"
-                    label={{ value: "Loss", angle: -90, position: "insideLeft" }}
-                  />
-                  <Tooltip
-                    contentStyle={{
-                      backgroundColor: "hsl(var(--popover))",
-                      border: "1px solid hsl(var(--border))",
-                      borderRadius: "0.5rem",
-                    }}
-                  />
-                  <Legend />
-                  <Line
-                    type="monotone"
-                    dataKey="train_loss"
-                    stroke="hsl(var(--primary))"
-                    name="Training Loss"
-                    strokeWidth={2}
-                    dot={false}
-                  />
-                  <Line
-                    type="monotone"
-                    dataKey="val_loss"
-                    stroke="hsl(var(--chart-2))"
-                    name="Validation Loss"
-                    strokeWidth={2}
-                    dot={false}
-                  />
-                </LineChart>
-              </ResponsiveContainer>
-            </Card>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        {/* Loss Curve */}
+        <Card className="p-6">
+          <h3 className="text-lg font-semibold mb-4">
+            Training &amp; Validation Loss
+          </h3>
+          <ResponsiveContainer width="100%" height={300}>
+            <LineChart data={selectedRun.history}>
+              <CartesianGrid
+                strokeDasharray="3 3"
+                stroke="hsl(var(--border))"
+              />
+              <XAxis
+                dataKey="epoch"
+                stroke="hsl(var(--muted-foreground))"
+                label={{
+                  value: "Epoch",
+                  position: "insideBottom",
+                  offset: -10,
+                }}
+              />  
+              <YAxis
+                stroke="hsl(var(--muted-foreground))"
+                label={{
+                  value: "Loss",
+                  angle: -90,
+                  position: "insideLeft",
+                }}
+              />
+              <Tooltip
+                formatter={(value: any, name) => {
+                  const label =
+                    name === "train_loss"
+                      ? "Train Loss"
+                      : name === "val_loss"
+                      ? "Val Loss"
+                      : name;
+                  return [Number(value).toFixed(10), label];
+                }}
+                contentStyle={{
+                  backgroundColor: "hsl(var(--popover))",
+                  border: "1px solid hsl(var(--border))",
+                  borderRadius: "0.5rem",
+                  fontSize: "0.75rem",
+                }}
+              />
+              <Legend />
+              {/* 2 lines: training + validation */}
+              <Line
+                type="monotone"
+                dataKey="train_loss"
+                name="Train Loss"
+                stroke="hsl(var(--primary))"
+                strokeWidth={2}
+                dot={false}
+                isAnimationActive={true}
+              />
+              <Line
+                type="monotone"
+                dataKey="val_loss"
+                name="Val Loss"
+                stroke="hsl(var(--accent))"
+                strokeWidth={2}
+                dot={false}
+                strokeDasharray="4 2"
+                isAnimationActive={true}
+              />
+            </LineChart>
+          </ResponsiveContainer>
+        </Card>
 
-            {/* Accuracy Curve */}
-            <Card className="p-6">
-              <h3 className="text-lg font-semibold mb-4">Training & Validation Accuracy</h3>
-              <ResponsiveContainer width="100%" height={300}>
-                <LineChart data={selectedRun.history}>
-                  <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
-                  <XAxis
-                    dataKey="epoch"
-                    stroke="hsl(var(--muted-foreground))"
-                    label={{ value: "Epoch", position: "insideBottom", offset: -5 }}
-                  />
-                  <YAxis
-                    stroke="hsl(var(--muted-foreground))"
-                    label={{ value: "Accuracy", angle: -90, position: "insideLeft" }}
-                    domain={[0.5, 1]}
-                  />
-                  <Tooltip
-                    contentStyle={{
-                      backgroundColor: "hsl(var(--popover))",
-                      border: "1px solid hsl(var(--border))",
-                      borderRadius: "0.5rem",
-                    }}
-                  />
-                  <Legend />
-                  <Line
-                    type="monotone"
-                    dataKey="train_acc"
-                    stroke="hsl(var(--primary))"
-                    name="Training Accuracy"
-                    strokeWidth={2}
-                    dot={false}
-                  />
-                  <Line
-                    type="monotone"
-                    dataKey="val_acc"
-                    stroke="hsl(var(--chart-2))"
-                    name="Validation Accuracy"
-                    strokeWidth={2}
-                    dot={false}
-                  />
-                </LineChart>
-              </ResponsiveContainer>
-            </Card>
-          </div>
+        {/* Accuracy Curve */}
+        <Card className="p-6">
+          <h3 className="text-lg font-semibold mb-4">
+            Training &amp; Validation Accuracy
+          </h3>
+          <ResponsiveContainer width="100%" height={300}>
+            <LineChart data={selectedRun.history}>
+              <CartesianGrid
+                strokeDasharray="3 3"
+                stroke="hsl(var(--border))"
+              />
+              <XAxis
+                dataKey="epoch"
+                stroke="hsl(var(--muted-foreground))"
+                label={{
+                  value: "Epoch",
+                  position: "insideBottom",
+                  offset: -10,
+                }}
+              />
+              <YAxis
+                stroke="hsl(var(--muted-foreground))"
+                label={{
+                  value: "Accuracy",
+                  angle: -90,
+                  position: "insideLeft"
+                }}
+                domain={[0.5, 1]}
+              />
+              <Tooltip
+                formatter={(value: any, name) => {
+                  const label =
+                    name === "train_acc"
+                      ? "Train Accuracy"
+                      : name === "val_acc"
+                      ? "Val Accuracy"
+                      : name;
+                  return [Number(value).toFixed(4), label];
+                }}
+                contentStyle={{
+                  backgroundColor: "hsl(var(--popover))",
+                  border: "1px solid hsl(var(--border))",
+                  borderRadius: "0.5rem",
+                  fontSize: "0.75rem",
+                }}
+              />
+              <Legend />
+              {/* 2 lines: training + validation */}
+              <Line
+                type="monotone"
+                dataKey="train_acc"
+                name="Train Accuracy"
+                stroke="hsl(var(--primary))"
+                strokeWidth={2}
+                dot={false}
+                isAnimationActive={true}
+              />
+              <Line
+                type="monotone"
+                dataKey="val_acc"
+                name="Val Accuracy"
+                stroke="hsl(var(--accent))"
+                strokeWidth={2}
+                dot={false}
+                strokeDasharray="4 2"
+                isAnimationActive={true}
+              />
+            </LineChart>
+          </ResponsiveContainer>
+        </Card>
+      </div>
+    </div>
+  );
+};
+
+
 
           {/* Notes */}
           {/* <Card className="p-6">
@@ -184,8 +245,3 @@ export const Training = () => {
               </Alert>
             </div>
           </Card> */}
-        </>
-      )}
-    </div>
-  );
-};
