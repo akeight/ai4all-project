@@ -28,6 +28,25 @@ project/
 ```
 ---
 
+## ✅ Prerequisites
+- Python 3.10+
+- Git 2.30+
+
+---
+
+## 🧭 Repository Setup
+```bash
+# clone the repo
+git clone https://github.com/akeight/ai4all-project.git
+cd ai4all-project
+
+```bash
+# create & switch to a new branch
+git switch -c feat/add-model
+```
+
+---
+
 ## 🐳 Docker Deployment (Local)
 
 Docker packages your application and its dependencies into containers, making it easy to run the same way on any computer.
@@ -151,25 +170,6 @@ docker-compose up
 7. **Delete** the feature branch you worked on after merge.
 
 > Default branches: `main` (protected) → feature branches → PR → review → merge.
-
----
-
-## ✅ Prerequisites
-- Python 3.10+
-- Git 2.30+
-
----
-
-## 🧭 Repository Setup
-```bash
-# clone the repo
-git clone https://github.com/akeight/ai4all-project.git
-cd ai4all-project
-
-```bash
-# create & switch to a new branch
-git switch -c feat/add-model
-```
 
 ---
 
