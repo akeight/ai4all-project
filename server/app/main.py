@@ -63,7 +63,14 @@ def get_model():
     """Get or load the model (cached)."""
     global _model_cache
     if _model_cache is None:
-        _model_cache = load_model()
+        try:
+            _model_cache = load_model()
+        except Exception as e:
+            print(f"Failed to load model: {e}")
+            raise HTTPException(
+                status_code=500, 
+                detail=f"Model loading failed: {str(e)}. Please check the model file exists and TensorFlow version is compatible."
+            )
     return _model_cache
 
 

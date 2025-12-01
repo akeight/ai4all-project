@@ -13,8 +13,8 @@ RUN apt-get update && apt-get install -y \
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy model file
-COPY app/model/blood_cancer_model_v2.h5 app/model/
+# Copy model files
+COPY app/model/*.h5 app/model/
 
 # Copy application code
 COPY app/ ./app/

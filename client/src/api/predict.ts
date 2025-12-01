@@ -1,7 +1,11 @@
 // src/api/predict.ts
 import type { PredictionResult } from "@/mocks/api";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+// Use environment variable if set, otherwise use relative URL (works with nginx proxy)
+// For local dev: set VITE_API_URL=http://localhost:8000 in .env.local
+// For Docker: use relative URLs (nginx proxies to backend)
+// Fallback to localhost:8000 for local development if no env var is set
+const API_URL = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? "http://localhost:8000" : "");
 
 export interface PredictOptions {
   return_cam: boolean;
@@ -25,7 +29,14 @@ export async function predictImage(
   });
 
   if (!res.ok) {
-    throw new Error("Prediction failed");
+    let errorMessage = "Prediction failed";
+    try {
+      const errorData = await res.json();
+      errorMessage = errorData.detail || errorData.message || errorMessage;
+    } catch {
+      errorMessage = `Prediction failed: ${res.status} ${res.statusText}`;
+    }
+    throw new Error(errorMessage);
   }
 
   const data = await res.json();

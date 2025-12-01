@@ -16,6 +16,7 @@ dist-ssr
 .vscode/*
 !.vscode/extensions.json
 .idea
+.cursor
 .DS_Store
 *.suo
 *.ntvs*
@@ -27,4 +28,5 @@ dist-ssr
 __pycache__/
 *.pyc
 *.h5
+!server/app/model/blood_cancer_model_v2.h5
 server/venv/

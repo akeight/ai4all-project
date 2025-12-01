@@ -54,7 +54,8 @@ export const Demo = () => {
       toast.success("Prediction completed!");
     } catch (error) {
       console.error("Prediction error:", error);
-      toast.error("Prediction failed. Please try again.");
+      const errorMessage = error instanceof Error ? error.message : "Prediction failed. Please try again.";
+      toast.error(errorMessage);
     } finally {
       setLoading(false);
     }
@@ -231,7 +232,7 @@ export const Demo = () => {
           )}
 
           {/* Controls */}
-          <Card className="card-gradient shadow-soft">
+          {/* <Card className="card-gradient shadow-soft">
             <CardHeader>
               <CardTitle>Prediction Controls</CardTitle>
             </CardHeader>
@@ -254,7 +255,7 @@ export const Demo = () => {
                 </p>
               </div>
             </CardContent>
-          </Card>
+          </Card> */}
         </div>
       </div>
     </div>
