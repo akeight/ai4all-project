@@ -1,0 +1,48 @@
+
+services:
+  backend:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: blood-cancer-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount metrics directory for validation predictions (now in client/public/metrics)
+      - ./client/public/metrics:/app/metrics
+      # Mount samples directory for sample images metadata
+      - ./client/public/samples:/app/samples:ro
+      # Mount data directory if needed (optional, for development)
+      # - ./server/data:/app/data
+    environment:
+      - PYTHONUNBUFFERED=1
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - app-network
+
+  frontend:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+      args:
+        - VITE_API_URL=http://localhost:8000
+    container_name: blood-cancer-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    volumes:
+      # Mount public directory for sample images (if generated locally)
+      - ./client/public:/usr/share/nginx/html/public:ro
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+

@@ -1,0 +1,366 @@
+{
+  "samples": [
+    {
+      "id": "val_benign_001",
+      "thumb": "/samples/benign/original_1.jpg",
+      "cam_overlay": "/samples/benign/gradcam_1.png",
+      "true": "Benign",
+      "pred": "Benign",
+      "prob": 0.9289035201072693,
+      "image_path": "data/images/val/Benign/Snap_064 (2).jpg"
+    },
+    {
+      "id": "val_benign_002",
+      "thumb": "/samples/benign/original_2.jpg",
+      "cam_overlay": "/samples/benign/gradcam_2.png",
+      "true": "Benign",
+      "pred": "Benign",
+      "prob": 0.9576588869094849,
+      "image_path": "data/images/val/Benign/Snap_024.jpg"
+    },
+    {
+      "id": "val_benign_003",
+      "thumb": "/samples/benign/original_3.jpg",
+      "cam_overlay": "/samples/benign/gradcam_3.png",
+      "true": "Benign",
+      "pred": "Benign",
+      "prob": 0.9104055762290955,
+      "image_path": "data/images/val/Benign/Snap_163.jpg"
+    },
+    {
+      "id": "val_benign_004",
+      "thumb": "/samples/benign/original_4.jpg",
+      "cam_overlay": "/samples/benign/gradcam_4.png",
+      "true": "Benign",
+      "pred": "Benign",
+      "prob": 0.9298420548439026,
+      "image_path": "data/images/val/Benign/Snap_106.jpg"
+    },
+    {
+      "id": "val_benign_005",
+      "thumb": "/samples/benign/original_5.jpg",
+      "cam_overlay": "/samples/benign/gradcam_5.png",
+      "true": "Benign",
+      "pred": "Benign",
+      "prob": 0.6527441740036011,
+      "image_path": "data/images/val/Benign/Sap_013 (34).jpg"
+    },
+    {
+      "id": "val_benign_006",
+      "thumb": "/samples/benign/original_6.jpg",
+      "cam_overlay": "/samples/benign/gradcam_6.png",
+      "true": "Benign",
+      "pred": "Benign",
+      "prob": 0.9942447543144226,
+      "image_path": "data/images/val/Benign/Snap_033 (2).jpg"
+    },
+    {
+      "id": "val_benign_007",
+      "thumb": "/samples/benign/original_7.jpg",
+      "cam_overlay": "/samples/benign/gradcam_7.png",
+      "true": "Benign",
+      "pred": "Benign",
+      "prob": 0.9980442523956299,
+      "image_path": "data/images/val/Benign/Snap_045 (2).jpg"
+    },
+    {
+      "id": "val_benign_008",
+      "thumb": "/samples/benign/original_8.jpg",
+      "cam_overlay": "/samples/benign/gradcam_8.png",
+      "true": "Benign",
+      "pred": "Benign",
+      "prob": 0.9595698714256287,
+      "image_path": "data/images/val/Benign/Snap_080 (3).jpg"
+    },
+    {
+      "id": "val_benign_009",
+      "thumb": "/samples/benign/original_9.jpg",
+      "cam_overlay": "/samples/benign/gradcam_9.png",
+      "true": "Benign",
+      "pred": "Benign",
+      "prob": 0.9621453881263733,
+      "image_path": "data/images/val/Benign/Snap_037.jpg"
+    },
+    {
+      "id": "val_benign_010",
+      "thumb": "/samples/benign/original_10.jpg",
+      "cam_overlay": "/samples/benign/gradcam_10.png",
+      "true": "Benign",
+      "pred": "Benign",
+      "prob": 0.8960535526275635,
+      "image_path": "data/images/val/Benign/Sap_013 (7).jpg"
+    },
+    {
+      "id": "val_malignant__pre_b_001",
+      "thumb": "/samples/malignant__pre_b/original_1.jpg",
+      "cam_overlay": "/samples/malignant__pre_b/gradcam_1.png",
+      "true": "Malignant Pre-B",
+      "pred": "Malignant Pre-B",
+      "prob": 0.819625973701477,
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_287.jpg"
+    },
+    {
+      "id": "val_malignant__pre_b_002",
+      "thumb": "/samples/malignant__pre_b/original_2.jpg",
+      "cam_overlay": "/samples/malignant__pre_b/gradcam_2.png",
+      "true": "Malignant Pre-B",
+      "pred": "Malignant Pre-B",
+      "prob": 0.9735807180404663,
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_642.jpg"
+    },
+    {
+      "id": "val_malignant__pre_b_003",
+      "thumb": "/samples/malignant__pre_b/original_3.jpg",
+      "cam_overlay": "/samples/malignant__pre_b/gradcam_3.png",
+      "true": "Malignant Pre-B",
+      "pred": "Malignant Pre-B",
+      "prob": 0.948982298374176,
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_639.jpg"
+    },
+    {
+      "id": "val_malignant__pre_b_004",
+      "thumb": "/samples/malignant__pre_b/original_4.jpg",
+      "cam_overlay": "/samples/malignant__pre_b/gradcam_4.png",
+      "true": "Malignant Pre-B",
+      "pred": "Malignant Pre-B",
+      "prob": 0.9431036710739136,
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_577.jpg"
+    },
+    {
+      "id": "val_malignant__pre_b_005",
+      "thumb": "/samples/malignant__pre_b/original_5.jpg",
+      "cam_overlay": "/samples/malignant__pre_b/gradcam_5.png",
+      "true": "Malignant Pre-B",
+      "pred": "Malignant Pre-B",
+      "prob": 0.9541565775871277,
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_755.jpg"
+    },
+    {
+      "id": "val_malignant__pre_b_006",
+      "thumb": "/samples/malignant__pre_b/original_6.jpg",
+      "cam_overlay": "/samples/malignant__pre_b/gradcam_6.png",
+      "true": "Malignant Pre-B",
+      "pred": "Malignant Pre-B",
+      "prob": 0.9910467267036438,
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_464.jpg"
+    },
+    {
+      "id": "val_malignant__pre_b_007",
+      "thumb": "/samples/malignant__pre_b/original_7.jpg",
+      "cam_overlay": "/samples/malignant__pre_b/gradcam_7.png",
+      "true": "Malignant Pre-B",
+      "pred": "Malignant Pre-B",
+      "prob": 0.947090208530426,
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_062.jpg"
+    },
+    {
+      "id": "val_malignant__pre_b_008",
+      "thumb": "/samples/malignant__pre_b/original_8.jpg",
+      "cam_overlay": "/samples/malignant__pre_b/gradcam_8.png",
+      "true": "Malignant Pre-B",
+      "pred": "Malignant Pre-B",
+      "prob": 0.9481411576271057,
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_388.jpg"
+    },
+    {
+      "id": "val_malignant__pre_b_009",
+      "thumb": "/samples/malignant__pre_b/original_9.jpg",
+      "cam_overlay": "/samples/malignant__pre_b/gradcam_9.png",
+      "true": "Malignant Pre-B",
+      "pred": "Malignant Pre-B",
+      "prob": 0.9145218729972839,
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_086.jpg"
+    },
+    {
+      "id": "val_malignant__pre_b_010",
+      "thumb": "/samples/malignant__pre_b/original_10.jpg",
+      "cam_overlay": "/samples/malignant__pre_b/gradcam_10.png",
+      "true": "Malignant Pre-B",
+      "pred": "Malignant Pre-B",
+      "prob": 0.9760624766349792,
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_025 - Copy.jpg"
+    },
+    {
+      "id": "val_malignant__pro_b_001",
+      "thumb": "/samples/malignant__pro_b/original_1.jpg",
+      "cam_overlay": "/samples/malignant__pro_b/gradcam_1.png",
+      "true": "Malignant Pro-B",
+      "pred": "Malignant Pro-B",
+      "prob": 0.9827011227607727,
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_504.jpg"
+    },
+    {
+      "id": "val_malignant__pro_b_002",
+      "thumb": "/samples/malignant__pro_b/original_2.jpg",
+      "cam_overlay": "/samples/malignant__pro_b/gradcam_2.png",
+      "true": "Malignant Pro-B",
+      "pred": "Malignant Pro-B",
+      "prob": 0.994678258895874,
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_173.jpg"
+    },
+    {
+      "id": "val_malignant__pro_b_003",
+      "thumb": "/samples/malignant__pro_b/original_3.jpg",
+      "cam_overlay": "/samples/malignant__pro_b/gradcam_3.png",
+      "true": "Malignant Pro-B",
+      "pred": "Malignant Pro-B",
+      "prob": 0.9861376881599426,
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_321.jpg"
+    },
+    {
+      "id": "val_malignant__pro_b_004",
+      "thumb": "/samples/malignant__pro_b/original_4.jpg",
+      "cam_overlay": "/samples/malignant__pro_b/gradcam_4.png",
+      "true": "Malignant Pro-B",
+      "pred": "Malignant Pro-B",
+      "prob": 0.9775852560997009,
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_169.jpg"
+    },
+    {
+      "id": "val_malignant__pro_b_005",
+      "thumb": "/samples/malignant__pro_b/original_5.jpg",
+      "cam_overlay": "/samples/malignant__pro_b/gradcam_5.png",
+      "true": "Malignant Pro-B",
+      "pred": "Malignant Pro-B",
+      "prob": 0.9980704188346863,
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_251.jpg"
+    },
+    {
+      "id": "val_malignant__pro_b_006",
+      "thumb": "/samples/malignant__pro_b/original_6.jpg",
+      "cam_overlay": "/samples/malignant__pro_b/gradcam_6.png",
+      "true": "Malignant Pro-B",
+      "pred": "Malignant Pro-B",
+      "prob": 0.9915084838867188,
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_567.jpg"
+    },
+    {
+      "id": "val_malignant__pro_b_007",
+      "thumb": "/samples/malignant__pro_b/original_7.jpg",
+      "cam_overlay": "/samples/malignant__pro_b/gradcam_7.png",
+      "true": "Malignant Pro-B",
+      "pred": "Malignant Pro-B",
+      "prob": 0.9969243407249451,
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_137 - Copy.jpg"
+    },
+    {
+      "id": "val_malignant__pro_b_008",
+      "thumb": "/samples/malignant__pro_b/original_8.jpg",
+      "cam_overlay": "/samples/malignant__pro_b/gradcam_8.png",
+      "true": "Malignant Pro-B",
+      "pred": "Malignant Pro-B",
+      "prob": 0.966408908367157,
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_715.jpg"
+    },
+    {
+      "id": "val_malignant__pro_b_009",
+      "thumb": "/samples/malignant__pro_b/original_9.jpg",
+      "cam_overlay": "/samples/malignant__pro_b/gradcam_9.png",
+      "true": "Malignant Pro-B",
+      "pred": "Malignant Pro-B",
+      "prob": 0.9526855945587158,
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_741.jpg"
+    },
+    {
+      "id": "val_malignant__pro_b_010",
+      "thumb": "/samples/malignant__pro_b/original_10.jpg",
+      "cam_overlay": "/samples/malignant__pro_b/gradcam_10.png",
+      "true": "Malignant Pro-B",
+      "pred": "Malignant Pro-B",
+      "prob": 0.9771366715431213,
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_406.jpg"
+    },
+    {
+      "id": "val_malignant__early_pre_b_001",
+      "thumb": "/samples/malignant__early_pre_b/original_1.jpg",
+      "cam_overlay": "/samples/malignant__early_pre_b/gradcam_1.png",
+      "true": "Malignant Early Pre-B",
+      "pred": "Malignant Early Pre-B",
+      "prob": 0.9782178997993469,
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_012.jpg"
+    },
+    {
+      "id": "val_malignant__early_pre_b_002",
+      "thumb": "/samples/malignant__early_pre_b/original_2.jpg",
+      "cam_overlay": "/samples/malignant__early_pre_b/gradcam_2.png",
+      "true": "Malignant Early Pre-B",
+      "pred": "Malignant Early Pre-B",
+      "prob": 0.9009440541267395,
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_279.jpg"
+    },
+    {
+      "id": "val_malignant__early_pre_b_003",
+      "thumb": "/samples/malignant__early_pre_b/original_3.jpg",
+      "cam_overlay": "/samples/malignant__early_pre_b/gradcam_3.png",
+      "true": "Malignant Early Pre-B",
+      "pred": "Malignant Early Pre-B",
+      "prob": 0.9994409680366516,
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snp_147 (7).jpg"
+    },
+    {
+      "id": "val_malignant__early_pre_b_004",
+      "thumb": "/samples/malignant__early_pre_b/original_4.jpg",
+      "cam_overlay": "/samples/malignant__early_pre_b/gradcam_4.png",
+      "true": "Malignant Early Pre-B",
+      "pred": "Malignant Early Pre-B",
+      "prob": 0.9829124212265015,
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_0233 (4).jpg"
+    },
+    {
+      "id": "val_malignant__early_pre_b_005",
+      "thumb": "/samples/malignant__early_pre_b/original_5.jpg",
+      "cam_overlay": "/samples/malignant__early_pre_b/gradcam_5.png",
+      "true": "Malignant Early Pre-B",
+      "pred": "Malignant Early Pre-B",
+      "prob": 0.7779222726821899,
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_077.jpg"
+    },
+    {
+      "id": "val_malignant__early_pre_b_006",
+      "thumb": "/samples/malignant__early_pre_b/original_6.jpg",
+      "cam_overlay": "/samples/malignant__early_pre_b/gradcam_6.png",
+      "true": "Malignant Early Pre-B",
+      "pred": "Malignant Early Pre-B",
+      "prob": 0.6622881889343262,
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap1_043 (69).jpg"
+    },
+    {
+      "id": "val_malignant__early_pre_b_007",
+      "thumb": "/samples/malignant__early_pre_b/original_7.jpg",
+      "cam_overlay": "/samples/malignant__early_pre_b/gradcam_7.png",
+      "true": "Malignant Early Pre-B",
+      "pred": "Malignant Early Pre-B",
+      "prob": 0.86190265417099,
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_030.jpg"
+    },
+    {
+      "id": "val_malignant__early_pre_b_008",
+      "thumb": "/samples/malignant__early_pre_b/original_8.jpg",
+      "cam_overlay": "/samples/malignant__early_pre_b/gradcam_8.png",
+      "true": "Malignant Early Pre-B",
+      "pred": "Malignant Early Pre-B",
+      "prob": 0.9635926485061646,
+      "image_path": "data/images/val/[Malignant] early Pre-B/Sap_148 (76).jpg"
+    },
+    {
+      "id": "val_malignant__early_pre_b_009",
+      "thumb": "/samples/malignant__early_pre_b/original_9.jpg",
+      "cam_overlay": "/samples/malignant__early_pre_b/gradcam_9.png",
+      "true": "Malignant Early Pre-B",
+      "pred": "Malignant Early Pre-B",
+      "prob": 0.993881344795227,
+      "image_path": "data/images/val/[Malignant] early Pre-B/Sap_148 (1).jpg"
+    },
+    {
+      "id": "val_malignant__early_pre_b_010",
+      "thumb": "/samples/malignant__early_pre_b/original_10.jpg",
+      "cam_overlay": "/samples/malignant__early_pre_b/gradcam_10.png",
+      "true": "Malignant Early Pre-B",
+      "pred": "Malignant Early Pre-B",
+      "prob": 0.9991268515586853,
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_244 - Copy.jpg"
+    }
+  ],
+  "total_samples": 40,
+  "samples_per_class": 10
+}

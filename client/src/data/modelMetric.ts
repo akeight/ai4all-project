@@ -1,6 +1,6 @@
 // client/src/data/modelMetrics.ts
-import rawHistory from "../../../metrics/training_history.json";
-import rawSummary from "../../../metrics/validation_summary.json";
+import rawHistory from "../../public/metrics/training_history.json";
+import rawSummary from "../../public/metrics/validation_summary.json";
 
 export type HistoryPoint = {
   epoch: number;

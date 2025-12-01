@@ -6,8 +6,9 @@ import { Slider } from "@/components/ui/slider";
 import { Button } from "@/components/ui/button";
 import { ImageGrid } from "@/components/ImageGrid";
 import { DetailDrawer } from "@/components/DetailDrawer";
-import { mockAPI } from "@/mocks/api";
+import { fetchSampleImages } from "@/api/predict";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { toast } from "sonner";
 
 const ALL_CLASSES = ["Benign", "Malignant Pre-B", "Malignant Pro-B", "Malignant Early Pre-B"];
 
@@ -27,21 +28,32 @@ export const Explore = () => {
   }, [selectedClasses, filterTypes, probRange, currentPage]);
 
   const loadSamples = async () => {
-    // Simulate filtering - in real app would pass to API
-    const allSamples = await mockAPI.getSamples(undefined, undefined, currentPage * pageSize, pageSize);
-    
-    const filtered = allSamples.filter((s: any) => {
-      if (!selectedClasses.includes(s.true)) return false;
+    try {
+      const allSamples = await fetchSampleImages();
       
-      const probPercent = s.prob * 100;
-      if (probPercent < probRange[0] || probPercent > probRange[1]) return false;
+      // Apply filters
+      const filtered = allSamples.filter((s: any) => {
+        if (!selectedClasses.includes(s.true)) return false;
+        
+        const probPercent = s.prob * 100;
+        if (probPercent < probRange[0] || probPercent > probRange[1]) return false;
+        
+        const isCorrect = s.true === s.pred;
+        const type = isCorrect ? "tp" : "fp";
+        return filterTypes.includes(type);
+      });
       
-      const isCorrect = s.true === s.pred;
-      const type = isCorrect ? "tp" : "fp";
-      return filterTypes.includes(type);
-    });
-    
-    setSamples(filtered);
+      // Apply pagination
+      const startIdx = currentPage * pageSize;
+      const endIdx = startIdx + pageSize;
+      const paginated = filtered.slice(startIdx, endIdx);
+      
+      setSamples(paginated);
+    } catch (error) {
+      console.error("Failed to load samples:", error);
+      toast.error("Failed to load sample images");
+      setSamples([]);
+    }
   };
 
   const handleClassToggle = (className: string) => {
@@ -60,9 +72,16 @@ export const Explore = () => {
 
   const handleImageClick = async (sample: any) => {
     setSelectedSample(sample);
-    // Get CAM for selected image
-    const result = await mockAPI.predict("", { return_cam: true, cam_layer: "layer4", threshold: 0.5 });
-    setCamImage(result.cam_b64);
+    // Use the cam_overlay path from the sample data if available
+    if (sample.cam_overlay) {
+      // Convert relative path to absolute URL
+      const camUrl = sample.cam_overlay.startsWith('/') 
+        ? sample.cam_overlay 
+        : `/${sample.cam_overlay}`;
+      setCamImage(camUrl);
+    } else {
+      setCamImage(undefined);
+    }
   };
 
   return (
