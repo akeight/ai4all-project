@@ -1,0 +1,2565 @@
+{
+  "predictions": [
+    {
+      "image_path": "data/images/val/Benign/Sap_013 (34).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.6527439951896667,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Sap_013 (39).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.771407961845398,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Sap_013 (43).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9884675741195679,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Sap_013 (5).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9697321653366089,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Sap_013 (7).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.8960536122322083,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_001 (3).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9944961667060852,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_004 (3).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9987049102783203,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_008 (2).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9569866061210632,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_014.jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.8078746199607849,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_015.jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.8867637515068054,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_019 (3).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9923259019851685,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_022 (2).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9862690567970276,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_022 (3).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.906026303768158,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_024 (4).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9759158492088318,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_024.jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9576588869094849,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_029 (4).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9972555637359619,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_029.jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9618476033210754,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_030 (2).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.5406655669212341,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_033 (2).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9942447543144226,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_033.jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.861192524433136,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_037.jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9621453285217285,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_039 (3).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9666369557380676,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_045 (2).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9980442523956299,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_046 (3).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.944672703742981,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_046.jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9329813718795776,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_048 (2).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.6001330018043518,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_049 (3).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.975856602191925,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_053.jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9288851618766785,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_062.jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9708123803138733,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_064 (2).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9289035797119141,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_076 (3).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9989073276519775,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_076.jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.4648316204547882,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_079 (3).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9909633994102478,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_080 (3).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9595699310302734,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_083.jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9992566108703613,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_089 (3).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.997191309928894,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_091 (2).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.8298104405403137,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_093 (3).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9958378076553345,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_094.jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.8848763704299927,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_096.jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9841383099555969,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_099 (2).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9663216471672058,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_101 (2).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.5829887986183167,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_103 (2).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.8356563448905945,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_103 (3).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9578949809074402,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_104 (2).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9255542755126953,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_106.jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9298419952392578,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_118 (3).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9996306896209717,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_118.jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.6316686272621155,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_119 (3).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9912993907928467,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_120.jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.7210211157798767,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_129 (2).jpg",
+      "true_label": "Benign",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.5223954319953918,
+      "is_correct": false
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_131.jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9968901872634888,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_135.jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9946134686470032,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_139.jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9995954632759094,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_152.jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9933249950408936,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_155.jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9692127704620361,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_163.jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9104055762290955,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_167.jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9594501256942749,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_179.jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.8316908478736877,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/Benign/Snap_184.jpg",
+      "true_label": "Benign",
+      "predicted_label": "Benign",
+      "confidence": 0.9930464029312134,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_001.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.5900993943214417,
+      "is_correct": false
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_003 - Copy.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.8858765959739685,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_007 - Copy.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9076789617538452,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_010 - Copy.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.8723598718643188,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_025 - Copy.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9760624766349792,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_0301.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9780876040458679,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_031.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.990835964679718,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_034.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9346399903297424,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_035.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9890537858009338,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_037 - Copy.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9863523244857788,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_046 - Copy.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9219885468482971,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_049 - Copy.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9821673035621643,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_057 - Copy.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.961064875125885,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_059.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.8510096073150635,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_062.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9470901489257812,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_068 - Copy.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9829465746879578,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_071 - Copy.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9946012496948242,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_076.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9706487059593201,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_079 - Copy.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9610645174980164,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_084 - Copy.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9956238269805908,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_086.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9145216941833496,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_088.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.6300438642501831,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_091.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.6847057938575745,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_098 - Copy.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.991948664188385,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_114.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.6397711038589478,
+      "is_correct": false
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_115 - Copy.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9824519753456116,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_124.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.516769289970398,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_130 - Copy.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.967167317867279,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_130.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.38331007957458496,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_137.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9728670716285706,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_143.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9901955127716064,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_156.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9824813604354858,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_158.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9841895699501038,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_161.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9940407872200012,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_197.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9389458298683167,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_208.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9547938108444214,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_218.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9345377087593079,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_219.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9801258444786072,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_228.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.978972315788269,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_275.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.8453984260559082,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_287.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.8196258544921875,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_295.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.7368006110191345,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_299.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.8260221481323242,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_310.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9521865844726562,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_313.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9848613142967224,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_315.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9436116218566895,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_338.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.8702667355537415,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_343.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9616488814353943,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_350.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9433000683784485,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_376.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9809583425521851,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_388.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9481412172317505,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_396.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9575771689414978,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_415.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9104745984077454,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_418.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9909912943840027,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_423.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9707695245742798,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_429.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9881764650344849,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_430.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9943743348121643,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_439.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9948055744171143,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_442.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9888157844543457,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_464.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9910467863082886,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_465.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9910754561424255,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_467.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9873083829879761,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_469.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9868679642677307,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_475.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.998437225818634,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_476.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9983599185943604,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_487.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9797874093055725,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_492.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9645673036575317,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_510.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9527607560157776,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_529.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9901099801063538,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_530.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9810512661933899,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_543.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9817937612533569,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_546.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.8664345741271973,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_556.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9881442189216614,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_577.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9431036114692688,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_579.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9849815964698792,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_594.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9771528244018555,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_596.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9564415216445923,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_611.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9950626492500305,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_639.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9489823579788208,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_640.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9544824957847595,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_642.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9735807180404663,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_656.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9319531321525574,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_662.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9899156093597412,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_675.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9892218708992004,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_680.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9688462018966675,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_692.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9757925271987915,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_693.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9757241010665894,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_705.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9877632260322571,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_717.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9769942760467529,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_721.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9429824352264404,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_729.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.992579460144043,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_730.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9783048033714294,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_737.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9828998446464539,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_755.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9541565775871277,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_761.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9719239473342896,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_763.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9418849349021912,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_766.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9860267043113708,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_785.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.916121244430542,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_786.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.953445315361023,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_787.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9907077550888062,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_788.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9957437515258789,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_801.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9850482940673828,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_802.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9817022681236267,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_810.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9929782152175903,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snap_819.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9766318798065186,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snapss_004.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9787260890007019,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pre-B/Snasp_009.jpg",
+      "true_label": "Malignant Pre-B",
+      "predicted_label": "Malignant Pre-B",
+      "confidence": 0.9826697111129761,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_001.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.8257582187652588,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_004.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9814577102661133,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_012.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9874082207679749,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_018.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9936838150024414,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_064.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9983054399490356,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_073.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9921458959579468,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_079.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9952307939529419,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_081.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9863331913948059,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_084.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9985991716384888,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_096.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9713983535766602,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_101 - Copy.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.989851176738739,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_115.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9941911101341248,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_119.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9956386089324951,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_123.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9975857734680176,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_137 - Copy.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9969244003295898,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_138.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.996056854724884,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_146 - Copy.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.997322678565979,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_150.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9974052906036377,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_159.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9821252822875977,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_165.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9934542179107666,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_169.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9775851964950562,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_173.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9946781992912292,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_187.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9588857293128967,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_211.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9944077730178833,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_222.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9886794090270996,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_223.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9921810626983643,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_251.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9980704188346863,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_252.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9950185418128967,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_259.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.982035219669342,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_264.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9916993379592896,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_276.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9921494722366333,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_278.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.8003736138343811,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_281.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9911488890647888,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_312.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.979560375213623,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_321.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9861377477645874,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_327.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9940166473388672,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_330.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9836642742156982,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_340.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9464121460914612,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_381.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9695485830307007,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_393.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9927741885185242,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_402.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9837214946746826,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_406.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9771366119384766,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_417.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9705234169960022,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_420.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9034138321876526,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_422.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9616999626159668,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_448.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9941957592964172,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_453.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9732835292816162,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_460.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9680411219596863,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_485.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9762939214706421,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_497.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.8977076411247253,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_504.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9827010631561279,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_515.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9033870697021484,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_518.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.8182134628295898,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_524.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.94054114818573,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_530.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9235256314277649,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_531.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9783132672309875,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_540.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9675007462501526,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_543.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9852014183998108,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_566.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9750028848648071,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_567.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9915085434913635,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_569.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9509565830230713,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_572.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9741335511207581,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_579.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9888026714324951,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_580.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9899502992630005,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_596.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9802695512771606,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_610.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9935053586959839,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_613.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.8224737048149109,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_627.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9318273067474365,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_628.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.8147701621055603,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_638.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Benign",
+      "confidence": 0.5727688670158386,
+      "is_correct": false
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_641.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.907612144947052,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_642.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.954950213432312,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_645.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9657701253890991,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_659.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9395549297332764,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_686.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9748954176902771,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_693.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.8479615449905396,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_707.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9658281803131104,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_708.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9644162654876709,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_712.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9305612444877625,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_715.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9664087891578674,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_730.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.8835988640785217,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_731.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9484958052635193,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_732.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9635904431343079,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_741.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.952685534954071,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_742.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9645841717720032,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_743.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9681479334831238,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_745.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9708143472671509,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_760.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9729215502738953,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] Pro-B/Snap_767.jpg",
+      "true_label": "Malignant Pro-B",
+      "predicted_label": "Malignant Pro-B",
+      "confidence": 0.9507885575294495,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Sap_148 (1).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9938812851905823,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Sap_148 (101).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9601501822471619,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Sap_148 (11).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9998911619186401,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Sap_148 (117).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9842444062232971,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Sap_148 (148).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.998735249042511,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Sap_148 (20).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9997815489768982,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Sap_148 (22).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9905959367752075,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Sap_148 (28).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.973321259021759,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Sap_148 (3).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9943795204162598,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Sap_148 (32).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9926022887229919,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Sap_148 (5).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9983946681022644,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Sap_148 (57).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9809050559997559,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Sap_148 (70).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9366340637207031,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Sap_148 (76).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9635926485061646,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Sap_148 (81).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9867997169494629,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Sap_148 (99).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9978139400482178,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Sn1ap_024 (11).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9877100586891174,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Sn1ap_024 (21).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9974820613861084,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Sn1ap_024 (26).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9696734547615051,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Sn1ap_024 (37).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.912801206111908,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Sn1ap_024 (41).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.998688280582428,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Sn1ap_024 (45).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9973458051681519,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Sn1ap_024 (52).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9994764924049377,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap1_043 (11).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.8057838678359985,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap1_043 (42).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.783498227596283,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap1_043 (43).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.6123070120811462,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap1_043 (59).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.8087265491485596,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap1_043 (69).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.6622881293296814,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap1_043 (7).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.6889895796775818,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap1_043 (8).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.8118880987167358,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_003 - Copy.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.979893684387207,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_011.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.8879990577697754,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_012.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9782178401947021,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_014.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9505344033241272,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_0233 (4).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9829123616218567,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_026 - Copy.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9929399490356445,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_030 - Copy.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9714229106903076,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_030.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.8619025945663452,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_034.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.917990505695343,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_035.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.49171534180641174,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_057 - Copy.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9564134478569031,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_063 - Copy.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9727026224136353,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_067.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9174061417579651,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_069.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9004843235015869,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_075 - Copy.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9885138273239136,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_076.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.877007246017456,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_077.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.7779224514961243,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_090 - Copy.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9430385231971741,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_092.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.8641830682754517,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_096.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.7411933541297913,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_108.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9344795942306519,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_114 - Copy.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.7583252787590027,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_118 - Copy.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.6559097170829773,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_124.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.6742329001426697,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_126 - Copy.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9594231247901917,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_128.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.6976229548454285,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_131.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.8099371790885925,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_132 - Copy.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9334110617637634,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_135.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.8232997059822083,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_137.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9048544764518738,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_148.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.8946241736412048,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_149 - Copy.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.8449080586433411,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_150 - Copy.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9929574728012085,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_151 - Copy.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9854357242584229,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_155 - Copy.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9591735601425171,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_155.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.531005322933197,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_160.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.8141025900840759,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_163 - Copy.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9935187697410583,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_171.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.8055917024612427,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_181 - Copy.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9695478081703186,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_181.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9112758040428162,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_189.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.8987753391265869,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_191 - Copy.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9759671688079834,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_197 - Copy.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9636353850364685,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_208 - Copy.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9935649633407593,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_209 - Copy.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9873110055923462,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_218.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.8948175311088562,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_219.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.8872325420379639,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_227 - Copy.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9982333183288574,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_235.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.8973777890205383,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_243 - Copy.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9836629629135132,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_244 - Copy.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9991268515586853,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_249.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Benign",
+      "confidence": 0.683925986289978,
+      "is_correct": false
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_256.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.7637345194816589,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_266.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.5674981474876404,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_268.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.8418083190917969,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_271.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.7574561834335327,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_279.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9009441137313843,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_284.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.8790072798728943,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snap_289.jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.6998625993728638,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snp_147 (10).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9885913133621216,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snp_147 (100).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9978928565979004,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snp_147 (110).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9940460920333862,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snp_147 (127).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.992928147315979,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snp_147 (132).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9887099266052246,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snp_147 (142).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.993766188621521,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snp_147 (157).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9988754391670227,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snp_147 (2).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9964114427566528,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snp_147 (22).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9988082051277161,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snp_147 (25).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9817225337028503,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snp_147 (45).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9922263622283936,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snp_147 (46).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9984546303749084,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snp_147 (50).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9960423707962036,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snp_147 (7).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9994410276412964,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snp_147 (71).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9973747730255127,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snp_147 (81).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9806889891624451,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snp_147 (92).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9984402060508728,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snp_147 (98).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.997249960899353,
+      "is_correct": true
+    },
+    {
+      "image_path": "data/images/val/[Malignant] early Pre-B/Snp_147 (99).jpg",
+      "true_label": "Malignant Early Pre-B",
+      "predicted_label": "Malignant Early Pre-B",
+      "confidence": 0.9963046312332153,
+      "is_correct": true
+    }
+  ],
+  "summary": {
+    "total": 365,
+    "correct": 360,
+    "incorrect": 5,
+    "accuracy": 0.9863013698630136
+  }
+}

@@ -8,9 +8,10 @@ from .gradcam import (
     overlay_heatmap,
 )
 
-ROOT = Path(__file__).parents[3]
-TEST_DIR = ROOT / "data" / "images" / "test"
-OUTPUT_ROOT = ROOT / "docs" / "gradcam"
+SERVER_ROOT = Path(__file__).parents[2]  # Points to server/
+PROJECT_ROOT = Path(__file__).parents[3]  # Points to project root
+TEST_DIR = SERVER_ROOT / "data" / "images" / "test"
+OUTPUT_ROOT = SERVER_ROOT / "docs" / "gradcam"
 
 
 def slugify(name: str) -> str:

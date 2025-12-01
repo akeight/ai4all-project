@@ -3,6 +3,7 @@
 import json
 from sklearn.metrics import classification_report
 import os
+from pathlib import Path
 import tensorflow as tf
 from tensorflow.keras.layers import Dense, Flatten
 from tensorflow.keras.models import Model
@@ -103,11 +104,14 @@ for i in range(num_epochs):
         "val_acc": float(history["val_accuracy"][i]),
     })
 
-os.makedirs("metrics", exist_ok=True)
-with open("metrics/training_history.json", "w") as f:
+# Save to client/public/metrics for frontend access
+metrics_dir = Path(__file__).parents[3] / "client" / "public" / "metrics"
+metrics_dir.mkdir(parents=True, exist_ok=True)
+
+with open(metrics_dir / "training_history.json", "w") as f:
     json.dump(history_data, f, indent=2)
 
-print("Saved training history to metrics/training_history.json")
+print(f"Saved training history to {metrics_dir / 'training_history.json'}")
 
 # ---------- LOAD BEST MODEL AND SAVE VALIDATION METRICS ----------
 print("Loading best model for evaluation...")
@@ -138,14 +142,14 @@ summary = {
     "weighted_f1": float(report["weighted avg"]["f1-score"]),
 }
 
-with open("metrics/validation_report.json", "w") as f:
+with open(metrics_dir / "validation_report.json", "w") as f:
     json.dump(report, f, indent=2)
 
-with open("metrics/validation_summary.json", "w") as f:
+with open(metrics_dir / "validation_summary.json", "w") as f:
     json.dump(summary, f, indent=2)
 
-print("Saved detailed report to metrics/validation_report.json")
-print("Saved summary metrics to metrics/validation_summary.json")
+print(f"Saved detailed report to {metrics_dir / 'validation_report.json'}")
+print(f"Saved summary metrics to {metrics_dir / 'validation_summary.json'}")
 
 # print the best validation accuracy
 best_val_acc = max(r.history['val_accuracy'])

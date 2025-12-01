@@ -1,17 +1,55 @@
 // src/api/predict.ts
-// export async function predictImage(file: File) {
-//     const formData = new FormData();
-//     formData.append("file", file);
+import type { PredictionResult } from "@/mocks/api";
+
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+
+export interface PredictOptions {
+  return_cam: boolean;
+  cam_layer: string;
+  threshold: number;
+}
+
+export async function predictImage(
+  file: File,
+  options: PredictOptions
+): Promise<PredictionResult> {
+  const formData = new FormData();
+  formData.append("file", file);
+  formData.append("return_cam", String(options.return_cam));
+  formData.append("cam_layer", options.cam_layer);
+  formData.append("threshold", String(options.threshold));
+
+  const res = await fetch(`${API_URL}/predict`, {
+    method: "POST",
+    body: formData,
+  });
+
+  if (!res.ok) {
+    throw new Error("Prediction failed");
+  }
+
+  const data = await res.json();
   
-//     const res = await fetch(import.meta.env.VITE_API_URL + "/predict", {
-//       method: "POST",
-//       body: formData,
-//     });
+  // Transform backend response to match frontend PredictionResult interface
+  return {
+    topk: data.topk.map((item: { label: string; score: number }) => ({
+      label: item.label,
+      prob: item.score,
+    })),
+    cam_b64: data.cam_url || data.cam_b64 || "",
+    inference_ms: data.inference_ms || 0,
+  };
+}
+
+/**
+ * Fetch sample images for the Explore page.
+ */
+export async function fetchSampleImages(): Promise<any[]> {
+  const res = await fetch(`${API_URL}/api/sample-images`);
   
-//     if (!res.ok) {
-//       throw new Error("Prediction failed");
-//     }
+  if (!res.ok) {
+    throw new Error(`Failed to fetch sample images: ${res.statusText}`);
+  }
   
-//     return res.json();
-//   }
-  
+  return res.json();
+}

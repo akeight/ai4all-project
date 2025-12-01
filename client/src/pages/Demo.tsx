@@ -5,13 +5,15 @@ import { Slider } from "../components/ui/slider";
 import { Label } from "../components/ui/label";
 import { TopKBar } from "@/components/TopKBar";
 import { PredictionCard } from "../components/PredictionCard";
-import { mockAPI, PredictionResult } from "../mocks/api";
+import { PredictionResult } from "../mocks/api";
+import { predictImage } from "@/api/predict";
 import { useAppStore } from "../store/useAppStore";
 import { Upload, Download, Eye, EyeOff } from "lucide-react";
 import { toast } from "sonner";
 
 export const Demo = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [prediction, setPrediction] = useState<PredictionResult | null>(null);
   const [loading, setLoading] = useState(false);
   const [showCam, setShowCam] = useState(false);
@@ -27,20 +29,22 @@ export const Demo = () => {
       return;
     }
 
+    setSelectedFile(file);
     const reader = new FileReader();
     reader.onload = (event) => {
       setSelectedImage(event.target?.result as string);
       setPrediction(null);
+      setShowCam(false);
     };
     reader.readAsDataURL(file);
   }, []);
 
   const handlePredict = async () => {
-    if (!selectedImage) return;
+    if (!selectedFile) return;
 
     setLoading(true);
     try {
-      const result = await mockAPI.predict(selectedImage, {
+      const result = await predictImage(selectedFile, {
         return_cam: true,
         cam_layer: "layer4",
         threshold: confidenceThreshold,
@@ -49,6 +53,7 @@ export const Demo = () => {
       setShowCam(true);
       toast.success("Prediction completed!");
     } catch (error) {
+      console.error("Prediction error:", error);
       toast.error("Prediction failed. Please try again.");
     } finally {
       setLoading(false);
@@ -56,7 +61,23 @@ export const Demo = () => {
   };
 
   const handleDownloadOverlay = () => {
-    toast.success("Overlay image downloaded (mock)");
+    if (!prediction?.cam_b64) {
+      toast.error("No overlay image available");
+      return;
+    }
+    
+    try {
+      // Create a link element and trigger download
+      const link = document.createElement("a");
+      link.href = prediction.cam_b64;
+      link.download = `gradcam-overlay-${Date.now()}.png`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      toast.success("Overlay image downloaded");
+    } catch (error) {
+      toast.error("Failed to download overlay image");
+    }
   };
 
   return (
@@ -154,11 +175,17 @@ export const Demo = () => {
                     alt="Base image"
                     className="w-full h-64 object-contain rounded-lg"
                   />
-                  {showCam && (
+                  {showCam && prediction?.cam_b64 && (
                     <div
-                      className="absolute inset-0 rounded-lg bg-gradient-to-br from-red-500/50 to-yellow-500/50"
+                      className="absolute inset-0 rounded-lg pointer-events-none"
                       style={{ opacity: camOpacity }}
-                    />
+                    >
+                      <img
+                        src={prediction.cam_b64}
+                        alt="Grad-CAM overlay"
+                        className="w-full h-full object-contain rounded-lg"
+                      />
+                    </div>
                   )}
                 </div>
 
@@ -170,7 +197,7 @@ export const Demo = () => {
                     id="cam-opacity"
                     min={0}
                     max={1}
-                    step={0.1}
+                    step={0.01}
                     value={[camOpacity]}
                     onValueChange={([value]) => setCamOpacity(value)}
                     className="w-full"

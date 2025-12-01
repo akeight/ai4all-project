@@ -119,3 +119,121 @@ git push
 - Delete the branch after merge
 
 ---
+
+# Run generate validations script with:
+```bash
+conda activate all-ml && python server/app/model/generate_validation_predictions.py
+```
+# Run sample grad-cam script with:
+```bash
+conda activate all-ml && python server/app/model/generate_sample_gradcam.py
+```
+
+---
+
+## 🐳 Docker Deployment (Local)
+
+Docker packages your application and its dependencies into containers, making it easy to run the same way on any computer.
+
+### Step 1: Install Docker
+
+**For macOS:**
+1. Download Docker Desktop from: https://www.docker.com/products/docker-desktop/
+2. Install the `.dmg` file
+3. Open Docker Desktop from Applications
+4. Wait for Docker to start (whale icon in menu bar should be steady)
+
+**For Windows:**
+1. Download Docker Desktop from: https://www.docker.com/products/docker-desktop/
+2. Install and follow the setup wizard
+3. Restart your computer if prompted
+4. Open Docker Desktop
+
+**Verify installation:**
+```bash
+docker --version
+docker-compose --version
+```
+
+### Step 2: Prepare Your Project
+
+Make sure you've generated the required data files:
+```bash
+# Generate validation predictions
+conda activate all-ml && python server/app/model/generate_validation_predictions.py
+
+# Generate sample images with grad-cam
+conda activate all-ml && python server/app/model/generate_sample_gradcam.py
+```
+
+### Step 3: Build and Start Docker Containers
+
+From the project root directory (`/Users/allykeightley/Desktop/AI4ALL/ai4all-project`):
+
+```bash
+# Build and start both services (backend + frontend)
+docker-compose up --build
+```
+
+**What this does:**
+- `--build` builds the Docker images (first time or after changes)
+- Creates two containers: one for backend (FastAPI) and one for frontend (React)
+- Starts both services and connects them
+
+**First time will take 5-10 minutes** (downloading base images, installing dependencies)
+
+### Step 4: Access Your Application
+
+Once you see both containers running:
+- **Frontend (React app):** http://localhost
+- **Backend API:** http://localhost:8000
+- **API Documentation:** http://localhost:8000/docs
+
+### Common Commands
+
+```bash
+# Start containers (in background)
+docker-compose up -d
+
+# View running containers
+docker-compose ps
+
+# View logs
+docker-compose logs
+docker-compose logs backend    # Just backend logs
+docker-compose logs frontend   # Just frontend logs
+
+# Stop containers
+docker-compose down
+
+# Stop and remove volumes (clean slate)
+docker-compose down -v
+
+# Rebuild after code changes
+docker-compose up --build
+```
+
+### Troubleshooting
+
+**Port already in use:**
+- If port 80 or 8000 is already in use, stop the conflicting service or change ports in `docker-compose.yml`
+
+**Container won't start:**
+```bash
+# Check logs for errors
+docker-compose logs backend
+docker-compose logs frontend
+
+# Rebuild from scratch
+docker-compose down
+docker-compose build --no-cache
+docker-compose up
+```
+
+**"Cannot connect to Docker daemon":**
+- Make sure Docker Desktop is running
+- Check the whale icon in your menu bar (macOS) or system tray (Windows)
+
+**Frontend can't reach backend:**
+- Make sure both containers are running: `docker-compose ps`
+- Check nginx is proxying correctly: `docker-compose logs frontend`
