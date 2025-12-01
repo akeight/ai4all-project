@@ -26,7 +26,20 @@ def load_model():
     print(f"Loading model from {MODEL_PATH}")
     if not MODEL_PATH.exists():
         raise FileNotFoundError(f"Model not found at {MODEL_PATH}")
-    return keras.models.load_model(MODEL_PATH, compile=False)
+    
+    import inspect
+    # Handle TensorFlow version compatibility
+    # TensorFlow 2.16+ requires safe_mode=False to load older models with batch_shape
+    try:
+        sig = inspect.signature(keras.models.load_model)
+        if 'safe_mode' in sig.parameters:
+            print("Using safe_mode=False for TensorFlow 2.16+ compatibility")
+            return keras.models.load_model(str(MODEL_PATH), compile=False, safe_mode=False)
+        else:
+            return keras.models.load_model(str(MODEL_PATH), compile=False)
+    except Exception as e:
+        print(f"Error loading model: {e}")
+        raise
 
 
 def get_class_mapping(generator):

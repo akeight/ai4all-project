@@ -13,7 +13,32 @@ LAST_CONV_LAYER_NAME = "conv5_block3_out"
 
 def load_model():
     print(f"Loading model from {MODEL_PATH}")
-    return keras.models.load_model(MODEL_PATH, compile=False)
+    import tensorflow as tf
+    import inspect
+    
+    # Handle TensorFlow version compatibility
+    # The model was saved with an older format that uses 'batch_shape' in InputLayer
+    # TensorFlow 2.16+ requires safe_mode=False to load such models
+    try:
+        # Check if safe_mode parameter exists (TensorFlow 2.16+)
+        sig = inspect.signature(keras.models.load_model)
+        if 'safe_mode' in sig.parameters:
+            # TensorFlow 2.16+ - disable safe mode to load older models
+            print("Using safe_mode=False for TensorFlow 2.16+ compatibility")
+            return keras.models.load_model(str(MODEL_PATH), compile=False, safe_mode=False)
+        else:
+            # Older TensorFlow versions - try standard load
+            print("Using standard load_model for older TensorFlow version")
+            return keras.models.load_model(str(MODEL_PATH), compile=False)
+    except Exception as e:
+        print(f"Error loading model with standard method: {e}")
+        # Try with tf.keras directly as fallback
+        try:
+            print("Trying tf.keras.models.load_model as fallback")
+            return tf.keras.models.load_model(str(MODEL_PATH), compile=False)
+        except Exception as e2:
+            print(f"All loading methods failed: {e2}")
+            raise RuntimeError(f"Failed to load model: {e2}. The model may have been saved with an incompatible TensorFlow version.") from e2
 
 def load_and_preprocess_image(img_path: str, img_size=(224, 224)):
     """

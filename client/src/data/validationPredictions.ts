@@ -20,7 +20,9 @@ export interface ValidationPredictionsData {
   summary: ValidationPredictionsSummary;
 }
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+// Use environment variable if set, otherwise use relative URL (works with nginx proxy)
+// Fallback to localhost:8000 for local development if no env var is set
+const API_URL = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? "http://localhost:8000" : "");
 
 /**
  * Fetch all validation predictions from the API.
