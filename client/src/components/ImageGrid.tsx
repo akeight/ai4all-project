@@ -46,7 +46,7 @@ export const ImageGrid = ({ samples, onImageClick }: ImageGridProps) => {
             </div>
             <div className="p-3 space-y-2">
               <div className="flex items-center justify-between gap-2">
-                <span className="text-xs text-muted-foreground">True:</span>
+                <span className="text-xs text-muted-foreground">Sample:</span>
                 <Badge variant="outline" className="text-xs">
                   {sample.true}
                 </Badge>

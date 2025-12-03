@@ -95,7 +95,7 @@ export const DetailDrawer = ({ sample, onClose, camImage }: DetailDrawerProps) =
             <h3 className="font-semibold text-sm">Metadata</h3>
             <div className="grid grid-cols-2 gap-3 text-sm">
               <div>
-                <span className="text-muted-foreground">True Label:</span>
+                <span className="text-muted-foreground">Sample/True Label:</span>
                 <Badge variant="outline" className="ml-2">
                   {sample.true}
                 </Badge>

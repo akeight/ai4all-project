@@ -1,4 +1,4 @@
-// Mock API layer - can be swapped for real endpoints later
+// API layer for data
 
 export interface PredictionResult {
     topk: Array<{ label: string; prob: number }>;
@@ -73,14 +73,14 @@ export interface PredictionResult {
       await delay(50);
       
       return {
-        accuracy: 0.96,
-        macro_f1: 0.95,
+        accuracy: 0.978494623655914,
+        macro_f1: 0.977592082302311,
         dataset_size: 2942,
         per_class: [
-          { label: "Benign", precision: 1.0, recall: 1.0, f1: 1.0, support: 487 },
-          { label: "Malignant Pre-B", precision: 1.0, recall: 0.80, f1: 0.89, support: 863 },
-          { label: "Malignant Pro-B", precision: 1.0, recall: 1.0, f1: 1.0, support: 719 },
-          { label: "Malignant Early Pre-B", precision: 0.83, recall: 1.0, f1: 0.91, support: 875 },
+          { label: "Benign", precision: 0.9531, recall: 0.9838, f1: 0.9682, support: 487 },
+          { label: "Malignant Pre-B", precision: 1.0, recall: 0.9541, f1: 0.9765, support: 863 },
+          { label: "Malignant Pro-B", precision: 0.9782, recall: 0.9890, f1: 0.9836, support: 719 },
+          { label: "Malignant Early Pre-B", precision: 0.9732, recall: 0.9909, f1: 0.9819, support: 875 },
         ],
       };
     },
@@ -91,10 +91,10 @@ export interface PredictionResult {
       return {
         labels: ["Benign", "Malignant Pre-B", "Malignant Pro-B", "Malignant Early Pre-B"],
         matrix: [
-          [780, 34, 12, 8],
-          [29, 765, 21, 11],
-          [15, 24, 752, 20],
-          [12, 18, 27, 743],
+          [59, 0, 0, 1],
+          [0, 105, 0, 2],
+          [1, 0, 88, 0],
+          [1, 0, 0, 108],
         ],
       };
     },
@@ -150,143 +150,6 @@ export interface PredictionResult {
     //   return { points };
     // },
   
-    async getTrainingRuns() {
-      await delay(50);
-      
-      // Real validation training history
-      const history = [
-        {
-          epoch: 1,
-          train_loss: 1.4320,
-          val_loss: 0.8957,
-          train_acc: 0.3991,
-          val_acc: 0.7197,
-        },
-        {
-          epoch: 2,
-          train_loss: 0.9432,
-          val_loss: 0.6277,
-          train_acc: 0.6506,
-          val_acc: 0.8382,
-        },
-        {
-          epoch: 3,
-          train_loss: 0.6950,
-          val_loss: 0.5070,
-          train_acc: 0.8017,
-          val_acc: 0.8508,
-        },
-        {
-          epoch: 4,
-          train_loss: 0.5625,
-          val_loss: 0.4326,
-          train_acc: 0.8542,
-          val_acc: 0.8773,
-        },
-        {
-          epoch: 5,
-          train_loss: 0.4860,
-          val_loss: 0.3795,
-          train_acc: 0.8687,
-          val_acc: 0.8828,
-        },
-        {
-          epoch: 6,
-          train_loss: 0.4100,
-          val_loss: 0.3282,
-          train_acc: 0.8990,
-          val_acc: 0.9121,
-        },
-        {
-          epoch: 7,
-          train_loss: 0.3716,
-          val_loss: 0.3000,
-          train_acc: 0.9149,
-          val_acc: 0.9177,
-        },
-        {
-          epoch: 8,
-          train_loss: 0.3552,
-          val_loss: 0.2784,
-          train_acc: 0.9087,
-          val_acc: 0.9219,
-        },
-        {
-          epoch: 9,
-          train_loss: 0.3148,
-          val_loss: 0.2499,
-          train_acc: 0.9390,
-          val_acc: 0.9386,
-        },
-        {
-          epoch: 10,
-          train_loss: 0.3116,
-          val_loss: 0.2306,
-          train_acc: 0.9317,
-          val_acc: 0.9442,
-        },
-        {
-          epoch: 11,
-          train_loss: 0.2773,
-          val_loss: 0.2148,
-          train_acc: 0.9312,
-          val_acc: 0.9512,
-        },
-        {
-          epoch: 12,
-          train_loss: 0.2621,
-          val_loss: 0.1962,
-          train_acc: 0.9390,
-          val_acc: 0.9540,
-        },
-        {
-          epoch: 13,
-          train_loss: 0.2332,
-          val_loss: 0.1873,
-          train_acc: 0.9484,
-          val_acc: 0.9596,
-        },
-        {
-          epoch: 14,
-          train_loss: 0.2311,
-          val_loss: 0.1719,
-          train_acc: 0.9442,
-          val_acc: 0.9623,
-        },
-        {
-          epoch: 15,
-          train_loss: 0.2191,
-          val_loss: 0.1674,
-          train_acc: 0.9476,
-          val_acc: 0.9637,
-        },
-      ]
-      
-      
-      return [
-        {
-          id: "run_001",
-          name: "Baseline ResNet50",
-          date: "2025-11-13",
-          metrics: {
-            accuracy: 0.96373, 
-            macro_f1: 0.9495,
-            loss: 0.2191,
-          },
-          history: history,
-        },
-        // {
-        //   id: "run_002",
-        //   name: "EfficientNet-B3 + Augmentation",
-        //   date: "2024-10-20",
-        //   metrics: {
-        //     accuracy: 0.91,
-        //     macro_f1: 0.89,
-        //     loss: 0.2191,
-        //   },
-        //   history: generateHistory(0.65, 1.1),
-        // },
-      ];
-    },
+    
   };
   

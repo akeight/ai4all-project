@@ -20,7 +20,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background flex flex-col">
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/60">
         <div className="container flex h-16 items-center justify-between px-4">
@@ -108,12 +108,12 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
       </header>
 
       {/* Main Content */}
-      <main className="container py-6 px-4">
+      <main className="container py-6 px-4 flex-1">
         {children}
       </main>
 
       {/* Footer */}
-      <footer className="border-t mt-12">
+      <footer className="border-t mt-auto">
         <div className="container py-6 px-4 text-center text-sm text-muted-foreground">
           <p>© 2025 ALL-Classifier Research Project • For Educational & Research Purposes Only</p>
         </div>

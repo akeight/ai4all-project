@@ -151,7 +151,7 @@ export const Dashboard = () => {
       </div>
 
       {/* CTA Buttons */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-6">
         <Link to="/demo" className="group">
           <Card className="card-gradient shadow-soft hover:shadow-glow transition-smooth cursor-pointer h-full">
             <CardContent className="pt-6 text-center space-y-3">
@@ -186,7 +186,7 @@ export const Dashboard = () => {
           </Card>
         </Link>
 
-        <Link to="/interpret" className="group">
+        {/* <Link to="/interpret" className="group">
           <Card className="card-gradient shadow-soft hover:shadow-glow transition-smooth cursor-pointer h-full">
             <CardContent className="pt-6 text-center space-y-3">
               <div className="mx-auto w-12 h-12 rounded-xl bg-warning/10 flex items-center justify-center group-hover:scale-110 transition-smooth">
@@ -201,7 +201,7 @@ export const Dashboard = () => {
               </Button>
             </CardContent>
           </Card>
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

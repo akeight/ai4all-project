@@ -17,13 +17,13 @@ export const ConfusionMatrix = ({ labels, matrix, onCellClick }: ConfusionMatrix
 
   return (
     <Card className="p-6">
-      <h3 className="text-lg font-semibold mb-4">Confusion Matrix</h3>
+      <h3 className="text-lg font-semibold mb-4">Validation Confusion Matrix</h3>
       <div className="overflow-x-auto">
         <div className="inline-block min-w-full">
           {/* Y-axis label */}
           <div className="flex items-center mb-2">
-            <div className="w-24 text-sm font-medium text-muted-foreground text-right pr-4">
-              True Label
+            <div className="w-24 text-sm font-medium text-muted-foreground text-right pr-2">
+              Sample Label
             </div>
           </div>
 

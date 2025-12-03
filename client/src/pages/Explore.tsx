@@ -107,7 +107,7 @@ export const Explore = () => {
             </div>
           </div>
 
-          <div>
+          {/* <div>
             <h3 className="font-semibold mb-3">Prediction Type</h3>
             <div className="space-y-2">
               {[
@@ -142,7 +142,7 @@ export const Explore = () => {
               step={1}
               minStepsBetweenThumbs={5}
             />
-          </div>
+          </div> */}
 
           <Button variant="outline" className="w-full" onClick={() => {
             setSelectedClasses(ALL_CLASSES);

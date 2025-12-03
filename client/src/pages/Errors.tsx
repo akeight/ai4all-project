@@ -61,7 +61,6 @@ export const Errors = () => {
           <ConfusionMatrix
             labels={confusionData.labels}
             matrix={confusionData.matrix}
-            onCellClick={handleCellClick}
           />
         )}
 
@@ -104,27 +103,7 @@ export const Errors = () => {
         )}
       </div>
 
-      {selectedCell && filteredSamples.length > 0 && (
-        <div className="space-y-4">
-          <h2 className="text-xl font-semibold">
-            Samples: True {confusionData.labels[selectedCell.true]} → Predicted{" "}
-            {confusionData.labels[selectedCell.pred]} ({filteredSamples.length})
-          </h2>
-          <ImageGrid samples={filteredSamples} onImageClick={handleImageClick} />
-        </div>
-      )}
-
-      {!selectedCell && (
-        <div className="text-center py-12 text-muted-foreground">
-          Click a cell in the confusion matrix to view samples
-        </div>
-      )}
-
-      <DetailDrawer
-        sample={selectedSample}
-        onClose={() => setSelectedSample(null)}
-        camImage={camImage}
-      />
+    
     </div>
   );
 };

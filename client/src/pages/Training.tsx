@@ -52,13 +52,13 @@ export const Training = () => {
         />
       )}
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 h-full">
         {/* Loss Curve */}
         <Card className="p-6">
           <h3 className="text-lg font-semibold mb-4">
             Training &amp; Validation Loss
           </h3>
-          <ResponsiveContainer width="100%" height={300}>
+          <ResponsiveContainer width="100%" height={350}>
             <LineChart data={selectedRun.history}>
               <CartesianGrid
                 strokeDasharray="3 3"
@@ -70,7 +70,7 @@ export const Training = () => {
                 label={{
                   value: "Epoch",
                   position: "insideBottom",
-                  offset: -10,
+                  offset: -5,
                 }}
               />  
               <YAxis
@@ -113,7 +113,7 @@ export const Training = () => {
                 type="monotone"
                 dataKey="val_loss"
                 name="Val Loss"
-                stroke="hsl(var(--accent))"
+                stroke="hsl(var(--warning))"
                 strokeWidth={2}
                 dot={false}
                 strokeDasharray="4 2"
@@ -128,7 +128,7 @@ export const Training = () => {
           <h3 className="text-lg font-semibold mb-4">
             Training &amp; Validation Accuracy
           </h3>
-          <ResponsiveContainer width="100%" height={300}>
+          <ResponsiveContainer width="100%" height={350}>
             <LineChart data={selectedRun.history}>
               <CartesianGrid
                 strokeDasharray="3 3"
@@ -140,7 +140,7 @@ export const Training = () => {
                 label={{
                   value: "Epoch",
                   position: "insideBottom",
-                  offset: -10,
+                  offset: -5,
                 }}
               />
               <YAxis
@@ -184,7 +184,7 @@ export const Training = () => {
                 type="monotone"
                 dataKey="val_acc"
                 name="Val Accuracy"
-                stroke="hsl(var(--accent))"
+                stroke="hsl(var(--warning))"
                 strokeWidth={2}
                 dot={false}
                 strokeDasharray="4 2"
