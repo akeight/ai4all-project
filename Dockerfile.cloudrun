@@ -10,17 +10,22 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy requirements and install Python dependencies
-COPY requirements.txt .
+COPY server/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy model files
-COPY app/model/*.h5 app/model/
+COPY server/app/model/*.h5 app/model/
 
 # Copy application code
-COPY app/ ./app/
+COPY server/app/ ./app/
+
+# Copy metrics and samples files for Cloud Run in-memory filesystem
+# These will be copied to /tmp at startup
+COPY client/public/metrics /app/data/metrics
+COPY client/public/samples /app/data/samples
 
 # Copy startup script
-COPY start.sh /app/start.sh
+COPY server/start.sh /app/start.sh
 RUN chmod +x /app/start.sh
 
 # Expose port

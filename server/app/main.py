@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 import time
 import json
+import os
 from pathlib import Path
 import numpy as np
 from io import BytesIO
@@ -14,8 +15,10 @@ from tensorflow import keras
 
 app = FastAPI()
 
-# allow Vite (default 5173), preview (4173), and production (port 80)
-origins = [
+# CORS configuration: Get allowed origins from environment variable
+# For local dev, defaults to localhost. For production, set ALLOWED_ORIGINS env var
+# Example: ALLOWED_ORIGINS="https://your-app.vercel.app,https://your-app.netlify.app"
+default_origins = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
     "http://localhost:4173",
@@ -25,6 +28,16 @@ origins = [
     "http://localhost:80",
     "http://127.0.0.1:80",
 ]
+
+# Get allowed origins from environment variable, or use defaults
+allowed_origins_env = os.getenv("ALLOWED_ORIGINS", "")
+if allowed_origins_env:
+    # Split by comma and strip whitespace
+    origins = [origin.strip() for origin in allowed_origins_env.split(",")]
+    # Always include localhost for local development
+    origins.extend(default_origins)
+else:
+    origins = default_origins
 
 app.add_middleware(
     CORSMiddleware,
@@ -185,14 +198,18 @@ async def predict(
 
 # Path to validation predictions JSON
 ROOT = Path(__file__).parents[1]
-# In Docker, these are mounted volumes, so check both locations
+# Check paths in order: Cloud Run in-memory (/tmp), Docker mount, local dev
 VALIDATION_PREDICTIONS_FILE = (
-    Path("/app/metrics/validation_predictions.json")  # Docker mount
+    Path("/tmp/metrics/validation_predictions.json")  # Cloud Run in-memory filesystem
+    if Path("/tmp/metrics/validation_predictions.json").exists()
+    else Path("/app/metrics/validation_predictions.json")  # Docker mount
     if Path("/app/metrics/validation_predictions.json").exists()
     else ROOT.parent / "client" / "public" / "metrics" / "validation_predictions.json"  # Local dev
 )
 SAMPLE_IMAGES_METADATA = (
-    Path("/app/samples/samples_metadata.json")  # Docker mount
+    Path("/tmp/samples/samples_metadata.json")  # Cloud Run in-memory filesystem
+    if Path("/tmp/samples/samples_metadata.json").exists()
+    else Path("/app/samples/samples_metadata.json")  # Docker mount
     if Path("/app/samples/samples_metadata.json").exists()
     else ROOT.parent / "client" / "public" / "samples" / "samples_metadata.json"  # Local dev
 )
