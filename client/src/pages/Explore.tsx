@@ -85,10 +85,10 @@ export const Explore = () => {
   };
 
   return (
-    <div className="flex gap-6">
+    <div className="flex flex-col lg:flex-row gap-6">
       {/* Filter Rail */}
-      <aside className="w-64 flex-shrink-0">
-        <Card className="p-6 space-y-6 sticky top-6">
+      <aside className="w-64 lg:w-64 flex-shrink-0">
+        <Card className="p-6 space-y-6 lg:sticky lg:top-6">
           <div>
             <h3 className="font-semibold mb-3">Class Filter</h3>
             <div className="space-y-2">
@@ -156,10 +156,10 @@ export const Explore = () => {
       </aside>
 
       {/* Main Content */}
-      <div className="flex-1">
+      <div className="flex-1 w-full min-w-0">
         <div className="mb-6">
-          <h1 className="text-3xl font-bold mb-2">Data Explorer</h1>
-          <p className="text-muted-foreground">
+          <h1 className="text-2xl md:text-3xl font-bold mb-2">Data Explorer</h1>
+          <p className="text-sm md:text-base text-muted-foreground">
             Browse and filter the dataset. Click any image to view details and Grad-CAM visualization.
           </p>
         </div>
