@@ -80,6 +80,8 @@ export const Training = () => {
                   angle: -90,
                   position: "insideLeft",
                 }}
+                domain={[0, 1.5]}
+                ticks={[0, 0.25, 0.5, 0.75, 1.0, 1.25, 1.5]}
               />
               <Tooltip
                 formatter={(value: any, name) => {
@@ -150,7 +152,8 @@ export const Training = () => {
                   angle: -90,
                   position: "insideLeft"
                 }}
-                domain={[0.5, 1]}
+                domain={[0.3, 1]}
+                ticks={[0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]}
               />
               <Tooltip
                 formatter={(value: any, name) => {

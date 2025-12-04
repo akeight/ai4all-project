@@ -114,7 +114,11 @@ export const Dashboard = () => {
                   textAnchor="end"
                   height={60}
                 />
-                <YAxis domain={[0.7, 1]} tick={{ fontSize: 12 }} />
+                <YAxis 
+                  domain={[0.9, 1]} 
+                  tick={{ fontSize: 12 }} 
+                  ticks={[0.9, 0.92, 0.94, 0.96, 0.98, 1.0]}
+                />
                 <Tooltip
                   contentStyle={{
                     backgroundColor: "hsl(var(--card))",
