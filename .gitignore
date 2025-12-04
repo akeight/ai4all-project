@@ -30,3 +30,7 @@ __pycache__/
 *.h5
 !server/app/model/blood_cancer_model_v2.h5
 server/venv/
+
+# Deployment guides
+CLOUDRUN_DEPLOY.md
+DEPLOYMENT_GUIDE.md
