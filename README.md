@@ -155,7 +155,7 @@ docker-compose up
 
 **Frontend can't reach backend:**
 - Make sure both containers are running: `docker-compose ps`
-- Check nginx is proxying correctly: `docker-compose logs frontend`
+- Check that nginx is proxying correctly: `docker-compose logs frontend`
 
 
 ---
@@ -167,7 +167,7 @@ docker-compose up
 4. **Open a Pull Request (PR)** and ask for review.
 5. **Address feedback**, keep PRs small.
 6. **Merge** with **Commit & Merge** into `main`.
-7. **Delete** the feature branch you worked on after merge.
+7. **Delete** the feature branch you worked on after merging.
 
 > Default branches: `main` (protected) → feature branches → PR → review → merge.
 
