@@ -216,4 +216,4 @@ git push
 ```
 **8) Merge**
 - Use **Commit & Merge** to keep `main` tidy
-- Delete the branch after merge
+- Deletes the branch after merge
